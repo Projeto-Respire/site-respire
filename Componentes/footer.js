@@ -23,7 +23,7 @@ export function Footer() {
             <a href="/pages/dicas.html" class="footer-link">Dicas</a>
           </li>
           <li>
-            <a href="/pages/Eventos.html" class="footer-link">Eventos</a>
+            <a href="/pages/noticias.html" class="footer-link">Notícias</a>
           </li>
           <li>
             <a href="/pages/comunidades.html" class="footer-link">Comunidades</a>

@@ -11,11 +11,11 @@ export function Header() {
     <ul id="menu" role="menu">
       <li><a href="/index.html">Home</a></li>
       <li><a href="/index.html>Sobre</a></li>
-      <li><a href="/pages/sintomas">Sintomas</a></li>
-      <li><a href="/pages/dicas">Dicas</a></li>
-      <li><a href="/pages/eventos">Eventos</a></li>
-      <li><a href="/pages/voluntarios">Voluntarios</a></li>
-      <li><a href="/pages/comunidades">Comunidades</a></li>
+      <li><a href="/pages/sintomas.html">Sintomas</a></li>
+      <li><a href="/pages/dicas.html">Dicas</a></li>
+      <li><a href="/pages/noticias.html">Notícias</a></li>
+      <li><a href="/pages/voluntarios.html">Voluntarios</a></li>
+      <li><a href="/pages/comunidades.html">Comunidades</a></li>
     </ul>
   </nav>
 <header>
