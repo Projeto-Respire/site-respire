@@ -6,7 +6,7 @@ body {
     box-sizing: border-box;
 }
 
-a , ul {
+a, ul {
     display: flex;
     text-decoration: none;
     list-style: none;

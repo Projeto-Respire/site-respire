@@ -25,3 +25,17 @@ document.addEventListener("DOMContentLoaded", () => {
     loadComponent("footer-container", "../assets/components/footer.html");
   }
 });
+
+
+////SECTION DE EVENTOS PRA POR EM NOTÍCIAS
+const eventosSection = document.querySelector("#eventos-section");
+
+fetch("/pages/eventos.html")
+  .then(res => res.text())
+  .then(html => {
+    const div = document.createElement("div");
+    div.innerHTML = html;
+
+    const conteudo = div.querySelector("main");
+    areaEventos.innerHTML = conteudo.innerHTML;
+  });

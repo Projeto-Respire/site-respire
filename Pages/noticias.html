@@ -11,26 +11,72 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter..." rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="/Assets/Estilos/noticias.css">
   
 </head>
 <body style="display: flex; flex-direction: column; min-height: 100vh;">
-<div id="header-root"></div>
+  <div id="header-root"></div>
 
-  <main style="flex-grow: 1;">
+    <main style="flex-grow: 1;">
+
+      
+      <!-- //MEU CODIGO NORMALMENTE PIPIPOPO -->
+      <section id="noticias">
+        
+        <h2>NOTÍCIAS</h2>
+        
+        <!-- //EVENTOS AQUI -->
+        <div id="eventos-container"></div>
+        <!-- //EVENTOS AQUI -->
+        
+        <div class="content-noticias">
+          <h3>Acompanhe as principais notícias<br>
+          sobre saúde mental!</h3>
+
+          <article class="card-noticia">
+            <div class="card-img"><img src="/Assets/imagens/caps.jpg" alt="Imagem da notícia"></div>
+
+            <div class="card-conteudo">
+                <h4>SUS realiza 192 mil atendimentos de <br>
+                saúde mental no primeiro semestre <br>
+                de 2025</h4>
+                <span class="fonte-data">gov.br · 10/10/2025</span>
+
+                <button class="btn-noticia">Ler notícia</button>
+            </div>
+          </article>
+
+          <article class="card-noticia">
+            <div class="card-img"><img src="/Assets/imagens/caps.jpg" alt="Imagem da notícia"></div>
+
+            <div class="card-conteudo">
+                <h4>Brasil: Afastamentos por problemas <br>
+                de saúde mental aumentam 134%</h4>
+                <span class="fonte-data">ONU Brasil · 17/04/2025</span>
+
+                <button class="btn-noticia">Ler notícia</button>
+            </div>
+          </article>
+
+          <article class="card-noticia">
+            <div class="card-img"><img src="/Assets/imagens/caps.jpg" alt="Imagem da notícia"></div>
+
+            <div class="card-conteudo">
+                <h4>Epidemia Silenciosa: Saúde Mental <br>
+                Ultrapassa Câncer e se Torna a Maior <br>
+                Preocupação dos Brasileiros</h4>
+                <span class="fonte-data">Forbes Brasil · 10/10/2025</span>
+
+                <button class="btn-noticia">Ler notícia</button>
+            </div>
+          </article>
+
+        </div>
+
+      </section>
     
-
-
-
-    
-  
-  
-  
-  
-  
-  
-  
-  
-  </main>
+    </main>
 
   <div id="footer-root"></div>
   <script type="module" src="/main.js"></script>

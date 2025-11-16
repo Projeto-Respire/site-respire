@@ -35,3 +35,17 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
 });
+
+//ADD DE EVENTOS DENTRO DE NOTÍCIAS
+async function carregarEventos() {
+  try {
+    const resp = await fetch("./eventos.html");
+    const html = await resp.text();
+
+    document.getElementById("eventos-container").innerHTML = html;
+  } catch (erro) {
+    console.error("Erro ao carregar eventos:", erro);
+  }
+}
+
+carregarEventos();
