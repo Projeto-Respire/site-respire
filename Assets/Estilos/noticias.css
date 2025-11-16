@@ -1,8 +1,7 @@
-.content-noticias{
+.noticias-container{
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
-
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
@@ -12,7 +11,11 @@ main h2{
     text-align: center;
 }
 
-.card-noticia {
+.noticias-container h2{
+  font-size: 2.5rem;
+}
+
+.card-noticia{
     display: grid;
     grid-template-columns: 320px 1fr;
     background: pink;
@@ -23,19 +26,18 @@ main h2{
     width: 900px;
 }
 
-/* Imagem */
-.card-img img {
+.card-img img{
     width: 100%;
     height: 260px;
     object-fit: cover;
     border-radius: 12px;
 }
 
-.fonte-data {
+.fonte-data{
     display: block;
 }
 
-.btn-noticia {
+.btn-noticia{
     background: white;
     cursor: pointer;
 }
