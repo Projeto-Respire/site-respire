@@ -1,36 +1,3 @@
-// // main.js
-
-
-// console.log("A tentar importar header.js e footer.js...");
-// import { Header } from './Componentes/header.js';
-// import { Footer } from './Componentes/footer.js';
-
-
-// document.addEventListener("DOMContentLoaded", () => {
-  
-//   console.log("DOM carregado. A procurar placeholders...");
-
- 
-//   const headerElement = document.getElementById('header-root');
-//   const footerElement = document.getElementById('footer-root');
-
-
-//   if (headerElement) {
-//     console.log("Encontrei 'header-root', a injetar Header...");
-//     headerElement.innerHTML = Header(); 
-//   } else {
-//     console.error("ERRO: Não encontrei o placeholder 'header-root'"); 
-//   }
-
-//   if (footerElement) {
-//     console.log("Encontrei 'footer-root', a injetar Footer...");
-//     footerElement.innerHTML = Footer();
-//   } else {
-//     console.error("ERRO: Não encontrei o placeholder 'footer-root'");
-//   }
-  
-// });
-
 import { Header } from './Componentes/header.js';
 import { Footer } from './Componentes/footer.js';
 
@@ -50,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function toggleMenu(event) {
     if (event.type === 'touchstart') event.preventDefault();
-    nav.classList.toggle('ativar'); // A tua classe é 'ativar'
+    nav.classList.toggle('ativar'); 
     const menuAtivo = nav.classList.contains('ativar');
     event.currentTarget.setAttribute('aria-expanded', menuAtivo);
     if (menuAtivo) {

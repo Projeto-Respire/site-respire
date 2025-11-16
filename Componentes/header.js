@@ -10,7 +10,7 @@ export function Header() {
     </button>
     <ul id="menu" role="menu">
       <li><a href="/index.html">Home</a></li>
-      <li><a href="/pages/noticias.html">Sobre</a></li>
+      <li><a href="/index.html>Sobre</a></li>
       <li><a href="/pages/sintomas">Sintomas</a></li>
       <li><a href="/pages/dicas">Dicas</a></li>
       <li><a href="/pages/eventos">Eventos</a></li>
