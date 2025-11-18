@@ -39,3 +39,24 @@ fetch("/pages/eventos.html")
     const conteudo = div.querySelector("main");
     areaEventos.innerHTML = conteudo.innerHTML;
   });
+
+  async function carregarEventos() {
+    try {
+        const container = document.getElementById("eventos-container");
+
+        if (!container) {
+            return;
+        }
+        const resp = await fetch("./eventos.html");
+        const html = await resp.text();
+        container.innerHTML = html;
+        const script = document.createElement('script');
+        script.src = "/assets/js/eventos.js"; 
+        document.body.appendChild(script); 
+
+    } catch (erro) {
+        console.error("Erro ao carregar eventos:", erro);
+    }
+}
+
+carregarEventos();
