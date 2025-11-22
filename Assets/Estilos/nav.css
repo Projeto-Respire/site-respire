@@ -5,20 +5,21 @@
   background-color: white;
   display: flex;
   height: 70px;
-  padding: 1rem;
+  padding: 4rem;
   justify-content: space-between;
   align-items: center;
 }
 
 .tipografia img{
-  width: 120px;
-  margin-top: 18px;
+  width: 140px;
+  margin-top: 30px;
+  cursor: pointer;
 }
 
 #menu{
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 2rem;
 }
 
 #menu a{
