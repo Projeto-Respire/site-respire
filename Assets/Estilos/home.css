@@ -1,104 +1,165 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sarala:wght@400;700&display=swap');
 
+
 body {
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    height: 2500px;
 }
 
-a, ul {
-    display: flex;
-    text-decoration: none;
-    list-style: none;
-    gap: 45px;
-    font-size: 16px;
-    font-weight: 700;
-    font-family: "Sarala", sans-serif;
-    font-style: normal;
+.caixas {
+    background-image: linear-gradient(to right,#004AAD,#10B3AA );
+    height: 300px;
+    margin-top: 35px;
 }
 
-
-.container-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1000px;
-}
-
-.logo-menu {
-    display: block;
-    height: 150px;
-}
-
-.container-home {
+.container-geral {
     display: grid;
-    max-width: 1400px;
     grid-template-columns: 1fr 1fr;
-    justify-content:space-evenly;
-    align-items: center;
-    position: relative;
-    column-gap: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 0 50px;
 }
 
-.texto-home {
+.texto-inicio{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 24px;
-    font-weight: 400;
-    font-family: "Sarala", sans-serif;
+    margin-top: 50px;
+    width: 45ch;
+    margin-left: 150px;
+    gap: 25px;
 }
 
-.imagem-home img {
-    width: 100%;
-    height: 100%;
+.poltrona img{
+    width: 400px;
+    position: relative;
+    left: 180px;
+    top: 50px;
 }
 
-.imagem-home {
-   width: 600px;
-   
+.botao-h {
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    background: white;
+    color: #7335EE;
+    font-weight: 900;
+    position: relative;
+    right: 100px;
 }
 
-.botao-home {
-    border-radius: 20px;
-    height: 52px;
-    width: 300px;
-    border: none;
-    background: #10B3AA;
-    color: white;
-    font-size: 24px;
-    font-weight: 400;
-    font-family: "Sarala", sans-serif;
-    align-items: center;
-    justify-content: center;
-}
-
-.caixa{
+.texto-emoji {
+    display: flex;
+    flex-direction: column;
+    width: 50ch;
+    gap: 25px;
     margin-top: 150px;
-    justify-items: center;
-    margin-right: 25px;
 }
-.caixa-texto {
-    margin-top: 35px;
+
+
+.texto-emoji h2 {
+    color: black;
+    font-size: 40px;
+    text-align: right;
+    margin-left: 100px;
+}
+
+.texto-emoji p {
+    color: black;
+    font-size: 22px;
+    text-align:end;
+}
+
+.emojis img{
+    width: 350px;
+    margin-top: 120px;
+    margin-left: 150px;
+}
+
+.botao-emoji {
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    background: #7335EE;
+    color: white;
+    font-weight: 900;
+    position: relative;
+    left: 250px;
+}
+
+.texto-3{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 180px;
+}
+
+.texto-3 p {
+    color: black;
+    font-size: 22px;
+    width: 30ch;
+    margin-left: 150px;
+}
+
+.texto-3 h2 {
+    margin-left: 150px;
+    color: black;
+    font-size: 40px;
+}
+
+.img-respi img {
+    width: 500px;
+    margin-top: 60px;
+    margin-left: 150px;
+}
+
+.botao-respi{
+    height: 50px;
+    width: 300px;
+    border-radius: 30px;
+    background: #7335EE;
+    color: white;
+    font-weight: 900;
+    position: relative;
+    margin-left: 150px;
+}
+
+
+.sala img {
+    width: 780px;
+    margin-right: 80px;
+}
+
+.mensagem-texto{
+    position: relative;
+    bottom: 250px;
+    font-size: 13px;
+    width: 30ch;
+    left: 100px;
+}
+
+.Mens  {
+    color: black;
+    width: 20ch;
+    position: relative;
+    top: 150px;
+    left: 110px;
+}
+
+.apoiar p, h3  {
+    color: black;
+    margin-top: 15px;
+}
+
+.apoiar {
+    margin-left: 150px;
+    width: 60ch;
+}
+
+.caixa-imagens{
     display: flex;
     align-items: center;
-    box-shadow: 5px 5px 10px 1px gray;
-    width: 80ch;
-    border-radius: 20px;
-}
-
-.texto-dois {
-    font-size: 16px;
-    font-family: "Sarala", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    padding: 30px;
-}
-
-.imagem-home2 {
-    display: block;
-    width: 400px;
-    height: 400px;
-    position: relative;
-    bottom: 55px;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-right: 155px;
 }
