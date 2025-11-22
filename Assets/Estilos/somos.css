@@ -1,0 +1,130 @@
+
+body {
+    height: 3400px;
+}
+
+.container-geral-somos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+}
+
+.texto-somos p{
+    color: black;
+    font-size: 30px;
+    width: 40ch;
+    text-align: right;
+    margin-right: 100px;
+}
+
+.img-somos {
+    width: 400px;
+    position: relative;
+    left: 150px;
+}
+
+.img-somos img{
+    width: 100%;
+}
+
+
+.caixa-somos {
+    display: flex;
+    background:#EFEFEF;
+    border-radius: 80px;
+    height: 542px;
+    width: 1270px;
+    padding: 0 15px;
+    justify-self: center;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.texto-somos2{
+    padding-left: 85px ;
+}
+
+.texto-somos2 h2 {
+    color:  black;
+    font-size: 40px;
+    width: 10ch;
+    margin-bottom: 25px;
+}
+
+.texto-somos2 p {
+    color: black;
+    font-size: 22px;
+    width: 35ch;
+    text-align: left;
+}
+
+
+.botao-so {
+    height: 50px;
+    width: 300px;
+    border-radius: 30px;
+    background: #3EBBB7;
+    margin-top: 30px;
+    font-weight: 900;
+}
+
+.personagens {
+    width: 400px;
+    position: relative;
+    left: 100px;
+    bottom: 70px;
+}
+
+.personagens img {
+    width: 100%;
+}
+
+.botao-so2 {
+    height: 50px;
+    width: 300px;
+    border-radius: 30px;
+    background: #8B6AC3;
+    margin-top: 30px;
+    font-weight: 900;
+}
+
+
+.caixa-somos2 {   
+    background:#EFEFEF;
+    border-radius: 80px;
+    height: 842px;
+    width: 1270px;
+    padding: 0 15px;
+    justify-self: center;
+    margin-bottom: 60px;
+}
+
+.texto-fin {
+    padding: 70px;
+}
+
+.texto-fin h2 {
+    color:  black;
+    font-size: 40px;
+    width: 10ch;
+    margin-bottom: 15px;
+    justify-self: center;
+}
+
+.texto-fin p {
+    color: black;
+    font-size: 22px;
+    width: 35ch;
+    text-align: right;
+}
+
+.img-fin {
+    width: 400px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.img-fin img {
+    width: 100%;
+}
