@@ -3,6 +3,21 @@ export function Footer() {
   return `
     
    <footer>
+
+    <section class="secao-apoio">
+    <div class="apoio-texto">
+        <h3>Apoio:</h3>
+        <p>Projetos que caminham com a gente na missão de tornar o cuidado com a saúde mental mais acessível.</p>
+    </div>
+    <div class="apoio-banner-logos">
+        <a href="https://www.proa.org.br" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/imagens/Captura de tela 2025-11-20 194918 1.svg" alt="Logo PROA" class="logo-parceiro"></a>
+        <a href="https://www.serasaexperian.com.br" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/imagens/Picsart_25-11-20_16-40-55-017.png" alt="Logo Serasa Experian" class="logo-parceiro"></a>
+
+        <img src="/assets/imagens/Picsart_25-11-22_02-11-37-864.png" alt="Logo CalmaMente" class="logo-parceiro">
+    </div>
+
       <div id="footer_content">
         <div id="footer_logo">
        <img src="/Assets/imagens/logo-branca.png" alt="logo-respire" aria-label="Logo Respire">

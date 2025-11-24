@@ -1,0 +1,195 @@
+@import url(../Estilos/global.css);
+
+
+body{
+
+  background-image: url(../Assets/imagens/3840-x-2160-nature-9sy3n0jp5uignkkw.jpg);  
+  overflow: hidden;
+  font-family: var(--fonte-a)
+}
+
+
+
+.login-container {
+    background: linear-gradient(to bottom, #004AAD, #0C99AB); 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.login-card {
+    background: hsla(195, 35%, 91%, 0.842);
+    backdrop-filter: blur(10px);          
+    border: 1px solid rgba(255, 255, 255,0.2);
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px; 
+    text-align: center;
+    color: #3F3F3F;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+
+h2 {
+    text-align: left;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    outline: none;
+    transition: 0.3s;
+}
+
+
+.input-group label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #67636B;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+    top: -20px;
+    font-size: 0.8rem;
+    color: #0C99AB;
+}
+
+.input-group input:focus {
+    border-bottom-color: #a29bfe;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #5E17EB; 
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #a29bfe;
+    transform: scale(1.02);
+}
+
+
+
+
+.esqueci, .registro-link a {
+    color: #67636B;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.esqueci:hover, .registro-link a:hover {
+    color: white;
+}
+
+.registro-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+
+.divisor {
+    margin: 20px 0;
+    position: relative;
+    text-align: center;
+}
+
+.divisor::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #3F3F3F;
+    z-index: 1;
+}
+
+.divisor span {
+    position: relative;
+    z-index: 2;
+    background: white;
+    padding: 0 10px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+    color: #67636B;
+    border: 1px solid black; 
+}
+
+/* Botão do GitHub */
+.btn-github {
+    background-color: #24292e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    font-weight: 600;
+}
+
+.btn-github:hover {
+    background-color: #000;
+    transform: scale(1.02);
+}
+
+.btn-github svg {
+    fill: white; 
+}
+
+
+
+.btn-google {
+    background-color: white;
+    color: #757575; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 600;
+   
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-google:hover {
+    background-color: #f1f1f1; 
+    transform: scale(1.02);
+}
