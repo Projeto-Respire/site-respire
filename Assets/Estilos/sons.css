@@ -1,0 +1,156 @@
+
+
+@import url("global.css");
+
+*{
+  font-family: var(--fonte-a);
+}
+#header{
+  background-color: white;
+  display: flex;
+  height: 70px;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+#header a:hover{
+  transform: scale(1.30);
+
+
+}
+
+
+.tipografia img{
+  width: 120px;
+  margin-top: 18px;
+}
+
+#menu{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#menu a{
+  font-family: var(--fonte-a);
+  font-weight: bold;
+  color: #5c2ba8;
+  font-size: 16px;
+  display: block;
+  padding: .5rem;
+}
+
+#mobo-btn{
+  display: none;
+}
+
+#sons{
+    background: linear-gradient(to bottom,  #004AAD , #6FC6B8 );
+    padding: 100px 100px 0px;
+}
+
+.container-sons{
+    margin: 0 auto;
+    
+}
+
+.texto-sons{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap:20px;
+}
+
+.secaotext{
+  display: flex;
+}
+
+.paragrafo{
+  width: 100vh;
+   text-align: center;
+   color: white;
+   font-size: 24px;
+   padding: 10px;
+ display: flex;
+  margin:0 auto;
+}
+
+.titulo {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+   
+}
+
+.botoes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 25px; 
+  max-width: 500px; 
+  margin: 0 auto;
+  padding: 60px 0px;
+  box-shadow: black;
+}
+
+.botoes li a {
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+    background: linear-gradient( #6FC6B8);
+  color: white;
+  border-radius: 60px;
+  font-size: 21px;
+  font-weight: bold;
+    padding: 30px 0px;
+  transition: 0.3s;
+  box-shadow:5px 5px 10px black;
+}
+
+.botoes li a:hover {
+  background: linear-gradient( #6FC6B8); 
+  transform: scale(1.30);
+}
+
+.onda{
+    display: block;
+    margin: 0;
+    max-width: 100%;
+    border-bottom: 0px;
+    background: linear-gradient( #6FC6B8); 
+}
+
+.path{
+      
+    margin: 0;
+ 
+}
+
+.audio-container {
+  background: #331155;
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  width: 300px;
+  margin-top: 20px;
+}
+
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background: #775599;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 15px 0;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background: #fff;
+  border-radius: 5px;
+}
+
