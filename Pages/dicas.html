@@ -1,57 +1,65 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Respire - Dicas</title>
-  <link rel="stylesheet" href="/Assets/Estilos/global.css"">
-  <link rel="stylesheet" href="Assets/Estilos/footer.css">
-  <link rel="stylesheet" href="Assets/Estilos/nav.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter..." rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-  <link rel="stylesheet" href="/Assets/Estilos/dicas.css">
-</head>
-<body style="display: flex; flex-direction: column; min-height: 100vh;">
-<div id="header-root"></div>
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respire - Dicas</title>
+    <link rel="stylesheet" href="/Assets/Estilos/global.css">
+    <link rel="stylesheet" href="/Assets/Estilos/footer.css">
+    <link rel="stylesheet" href="/Assets/Estilos/nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter..." rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="/Assets/Estilos/dicas.css">
+  </head>
+  <body style="display: flex; flex-direction: column; min-height: 100vh;">
+    
+    <div id="header-root"></div>
+    <main style="flex-grow: 1;">
+      
 
-  <main style="flex-grow: 1;">
+
+
+      <section id="dicas">
+
+        <!-- ONDAQUI -->
+
+        <div class="onda fade">
+          <img src="/Assets/imagens/onda-dicas.svg">
+          <h2 class="titulo-sobre-onda">DICAS</h2>
+        </div>
+        
+        <div class="dicas-container">
+          
+          <div class="dicas-texto fade">
+            <p>Você verá alguns exercicios de calmaria para te ajudar em momentos de crises emocionais! 
+            <br>
+            <br>
+            Lembre-se: Respire fundo. Escolha o que você precisa agora. Bora lá? :)</p>
+          </div>
+
+          <div class="botoes-container fade">
+            <a class="btn-dicas" href="/pages/sons.html">SONS</a>
+            <a class="btn-dicas" href="/pages/meditacao.html">MEDITAÇÃO</a>
+            <a class="btn-dicas" href="/pages/relaxamento.html">RELAXAMENTO</a>
+            <a class="btn-dicas" href="/pages/respiracao.html">RESPIRAÇÃO</a>
+          </div>
+
+        </div>
+
+      </section>
     
 
 
+      <div id="footer-root"></div>
 
-    <section id="dicas">
-      
-      <div class="container-dicas">
+    </main>
 
-        <h2>DICAS</h2>
-        
-        <div class="dicas-texto">
-          <p>Nessa parte você verá alguns exercicios de calmaria <br>
-          para te ajudar em momentos de crises emocionais! 
-          <br>
-          <br>
-          Lembre-se: Respire fundo. Escolha o que você precisa <br>
-          agora. Bora lá? :)</p>
-        </div>
-
-        <button class="btn-dicas"><a href="/pages/sons.html">Sons</a></button>
-        <button class="btn-dicas"><a href="/pages/meditacao.html">Meditação</a></button>
-        <button class="btn-dicas"><a href="/pages/relaxamento.html">Relaxamento</a></button>
-        <button class="btn-dicas"><a href="/pages/respiracao.html">Respiração</a></button>
-
-      </div>
-
-    </section>
-  
+      <script type="module" src="/main.js"></script>
+      <script defer src="/Assets/js/dicas.js"></script>
 
 
-
-  </main>
-
-  <div id="footer-root"></div>
-  <script type="module" src="/main.js"></script>
-</body> 
-</html>
+  </body> 
+  </html>

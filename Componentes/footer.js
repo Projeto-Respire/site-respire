@@ -32,31 +32,34 @@ export function Footer() {
             <a href="/index.html" class="footer-link">Home</a>
           </li>
           <li>
-            <a href="/pages/sobre.html" class="footer-link">Sobre</a>
+            <a href="/pages/voluntarios.html" class="footer-link">Voluntarios</a>
           </li>
           <li>
             <a href="/pages/dicas.html" class="footer-link">Dicas</a>
           </li>
           <li>
-            <a href="/pages/noticias.html" class="footer-link">Notícias</a>
+            <a href="/pages/noticias.html" class="footer-link">Notícias & Eventos</a>
           </li>
           <li>
+            <a href="/pages/quemsomos.html" class="footer-link">Quem somos</a>
+          </li>
+          <li>
+            <a href="/pages/apoiador.html" class="footer-link">Apoiador</a>
+          </li>
+            <li>
             <a href="/pages/comunidades.html" class="footer-link">Comunidades</a>
-          </li>
-          <li>
-            <a href="/pages/eventos.html" class="footer-link">Quem somos</a>
           </li>
         </ul>
         <div id="footer_contacts">
           <p>Contatos</p>
           <div id="footer_social_media">
-            <a href="/" class="footer-link" id="instagram">
+            <a href="https://www.instagram.com/resp.lre?igsh=eWg1ODhwNjhkeXI1" class="footer-link" id="instagram">
               <i class="fa-brands fa-instagram"></i>
             </a>
             <a href="https://github.com/Projeto-Respire/.github.git" class="footer-link" id="github" target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-github-alt"></i>
             </a>
-           <a href="/" class="footer-link" id="linkedin">
+           <a href="https://www.linkedin.com/company/projeto-respire"class="footer-link" id="linkedin">
              <i class="fa-brands fa-linkedin"></i>
             </a>
           </div>

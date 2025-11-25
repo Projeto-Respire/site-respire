@@ -1,0 +1,193 @@
+@import url(global.css);
+
+
+main{
+  margin-top: 200px;
+
+}
+
+body{
+  background-color: #F5F0E6;
+}
+
+.apoio {
+    display: flex;
+    gap: 20px;           
+    max-width: 1200px;    
+    margin: 50px auto;     
+    padding: 0 20px;        
+}
+
+
+.card-apoio {
+    flex: 1;                
+    border-radius: 24px;   
+    padding: 20px;         
+    min-height: 400px;     
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.card-bege {
+    background-color: #10B3AA; 
+    color: #333;
+    position: relative;
+    padding: 60px; 
+}
+
+.texto-pequeno{
+  color: var(--cor-evento);
+}
+
+.top-detalhe {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #888; 
+}
+
+.card-bege h2 {
+    font-size: 3rem;       
+    font-weight: 400;     
+    line-height: 1.2;   
+    color: var( --cor-evento);
+}
+
+
+.card-azul {
+    background-color: #10B3AA; 
+    align-items: center; 
+}
+
+.img-destaque {
+    max-width: 100%;
+    width: 100vh; 
+    height: auto;
+    object-fit: cover;
+}
+
+.ajuda{
+  color: var(--cor-evento);
+  text-align: center;
+  padding-block: 60px;
+}
+
+.modos {
+    display: flex; 
+    justify-content: center; 
+    gap: 30px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+
+
+.compartilhar {
+    
+    background-color: #10B3AA; 
+    border-radius: 24px;      
+    padding: 40px;         
+    width: 100%;
+    max-width: 380px;         
+    border: none;              
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+}
+
+
+.compartilhar span:nth-child(1) {
+    font-size: 1.2rem;
+    color: #2C3E50;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    display: block;
+}
+
+.compartilhar span:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2C3E50;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.compartilhar p {
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: transparent;
+    border: 2px solid #2C3E50;
+    color: #2C3E50;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-social:hover {
+    background-color: #2C3E50;
+    color: #F5F0E6;
+}
+
+
+.btn-destaque {
+    display: inline-block;     
+    background-color: #343A40; 
+    color: #fff;               
+    text-decoration: none;     
+    padding: 14px 28px;          
+    border-radius: 50px;         
+    font-weight: 600;           
+    margin-top: 20px;        
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+
+.btn-destaque:hover {
+    transform: scale(1.05);    
+    background-color: #23272b;  
+}
+
+
+@media (max-width: 768px) {
+    .apoio {
+        flex-direction: column; 
+    }
+    
+    .card-bege h2 {
+        font-size: 2rem; 
+    }
+
+
+    .compartilhar{
+        flex-direction: column;
+    }
+    
+}
