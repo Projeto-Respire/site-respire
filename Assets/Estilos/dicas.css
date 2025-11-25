@@ -73,12 +73,11 @@
 /* BOTÕES */
 .botoes-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 50px;
   max-width: 1200px;
   margin: 40px auto;
 }
-
 
 .btn-dicas{
     width: 100%;
