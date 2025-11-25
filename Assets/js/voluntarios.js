@@ -6,29 +6,21 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 1, 
             name: "Ana", 
             // Caminho relativo: pasta/nome-do-arquivo
-            img: "/Assets/imagens/pessoa.jpg" 
+            img: "/Assets/imagens/mid-shot-woman-therapist-with-clipboard (1).jpg" 
         },
         { 
             id: 2, 
-            name: "Maycon", 
-            img: "/Assets/imagens/Maycon Ryan Alves dos Santos_Rosto.jpg" 
+            name: "Julia", 
+            img: "/Assets/imagens/mid-shot-woman-therapist-with-clipboard.jpg" 
         },
-        { 
-            id: 3, 
-            name: "Welder", 
-            img: "" 
-        },
-        { 
-            id: 4, 
-            name: "Gustavo", 
-            img: "" 
-        },
+
         { 
             id: 5, 
             name: "Camila", 
-            img: "" 
+            img: "/Assets/imagens/smiley-elegant-businesswoman-holding-clipboard.jpg" 
         }
     ];
+
 
     const track = document.getElementById('track');
     let currentIndex = 2; 
