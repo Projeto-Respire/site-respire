@@ -8,6 +8,7 @@ main{
 
 body{
   background-color: #F5F0E6;
+  font-family: var(--fonte-principal);
 }
 
 .apoio {

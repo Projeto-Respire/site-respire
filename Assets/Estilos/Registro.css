@@ -1,5 +1,8 @@
 @import url(global.css);
 
+*{
+    font-family: var(--fonte-principal);
+}
 
 
 body{

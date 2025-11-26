@@ -2,6 +2,12 @@
 
 
 
+*{
+    font-family: var(--fonte-principal);
+}
+
+
+
 main{
   margin-bottom: 250px;
 }

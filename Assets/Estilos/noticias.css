@@ -1,3 +1,11 @@
+@import url(global.css);
+
+*{
+    font-family: var(--fonte-principal);
+}
+
+
+
 /* ONDA */
 .onda{
     width: 100%;

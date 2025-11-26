@@ -70,3 +70,25 @@ async function carregarEventos() {
 }
 
 carregarEventos();
+
+
+//Vlibras
+
+document.addEventListener('DOMContentLoaded', function() {
+    const divWidget = document.createElement('div');
+    divWidget.innerHTML = `
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+    `;    
+    document.body.appendChild(divWidget);
+    const script = document.createElement('script');
+    script.src = "https://vlibras.gov.br/app/vlibras-plugin.js";
+    script.onload = function() {
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    };
+    document.body.appendChild(script);
+});
