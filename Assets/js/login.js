@@ -17,14 +17,14 @@ function fazerLogin(event) {
         document.getElementById('senha').focus();
         return; 
     } 
-    
-    localStorage.setItem('usuarioLogado', 'sim');
-    
-    localStorage.setItem('nomeUsuario', email); 
 
-    alert("Login Aprovado! Redirecionando...");
-    
-    window.location.href = '../../index.html'; 
+    if (email === 'aluno@teste.com' && senha === 'senha123') {
+        alert("Login Aprovado! Redirecionando...");
+        window.location.href = '../../index.html'; 
+    } else {
+
+        alert("E-mail ou senha inválidos!");
+    }
 }
 
 function loginrede(rede) {
@@ -35,14 +35,8 @@ function loginrede(rede) {
     btn.style.opacity = "0.7"; 
 
     setTimeout(() => {
-      
-        localStorage.setItem('usuarioLogado', 'sim');
-        
-
-        localStorage.setItem('nomeUsuario', 'Usuário ' + rede);
 
         alert("Login com " + rede + " Aprovado!");
         window.location.href = '../../index.html'; 
     }, 1500);
 }
-
