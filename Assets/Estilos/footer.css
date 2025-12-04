@@ -2,7 +2,7 @@
 
 *{
   letter-spacing: 1px;
-  font-family: var(--fonte-secundaria);
+  font-family: var(--fonte-principal);
   color: var(--cor-texto-claro);
 }
 main{

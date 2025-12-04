@@ -2,7 +2,7 @@
 @import url("global.css");
 
 *{
-  font-family: var(--fonte-a);
+  font-family: var(--fonte-principal);
 }
 
 #container{

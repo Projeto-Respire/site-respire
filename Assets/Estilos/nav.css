@@ -1,12 +1,23 @@
 @import url("global.css");
 
+*{
+    font-family: var(--fonte-principal);
+}
+
+
 
 #header{
   background-color: white;
   display: flex;
   height: 70px;
   padding: 1rem;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#nav{
+  display: flex;
+  justify-content:center;
   align-items: center;
 }
 

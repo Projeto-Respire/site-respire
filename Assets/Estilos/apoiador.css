@@ -8,6 +8,7 @@ main{
 
 body{
   background-color: #F5F0E6;
+  font-family: var(--fonte-principal);
 }
 
 .apoio {
@@ -30,14 +31,14 @@ body{
 }
 
 .card-bege {
-    background-color: #006aff5c; 
+    background-color: #004AAD; 
     color: #333;
     position: relative;
     padding: 60px; 
 }
 
 .texto-pequeno{
-  color: var(--cor-evento);
+  color: white;
 }
 
 .top-detalhe {
@@ -54,12 +55,12 @@ body{
     font-size: 3rem;       
     font-weight: 400;     
     line-height: 1.2;   
-    color: var( --cor-evento);
+    color: white;
 }
 
 
 .card-azul {
-    background-color: #006aff5c; 
+    background-color: #004AAD; 
     align-items: center; 
 }
 
@@ -91,7 +92,7 @@ body{
 
 .compartilhar {
     
-    background-color: #006aff5c; 
+    background-color: #004AAD; 
     border-radius: 24px;      
     padding: 40px;         
     width: 100%;
@@ -105,7 +106,7 @@ body{
 
 .compartilhar span:nth-child(1) {
     font-size: 1.2rem;
-    color: #2C3E50;
+    color: #ffffff;
     margin-bottom: 20px;
     opacity: 0.8;
     display: block;
@@ -114,13 +115,13 @@ body{
 .compartilhar span:nth-child(2) {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #2C3E50;
+    color: #ffffff;
     margin-bottom: 15px;
     display: block;
 }
 
 .compartilhar p {
-    color: #4a5568;
+    color: #ffffff;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -139,7 +140,7 @@ body{
     justify-content: center;
     gap: 8px;
     background: transparent;
-    border: 2px solid #2C3E50;
+    border: 2px solid #000000;
     color: #2C3E50;
     padding: 10px;
     border-radius: 8px;

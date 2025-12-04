@@ -1,5 +1,10 @@
+
 html {
     scroll-behavior: smooth;
+}
+
+main{
+  flex-grow: 1;
 }
 
 @keyframes entrarSuave {
@@ -37,7 +42,7 @@ html {
 }
 
 body{
-  margin: 0%;
+  margin: 0 auto;
   animation: entrarSuave 0.8s ease-out;
 }
 
@@ -83,4 +88,10 @@ img{
 #menu a:hover::after {
 
     transform: scaleX(1);
+}
+
+.retem {
+  max-width: 1700px;
+  margin: 0 auto;
+  align-items: center;
 }

@@ -13,14 +13,29 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/Assets/Estilos/voluntarios.css">
   
-  
 </head>
-<body style="display: flex; flex-direction: column; min-height: 100vh;">
-<div id="header-root"></div>
-      <script src="/Assets/js/voluntarios.js"></script>
-  <main style="flex-grow: 1;">
-    
+<body>
+      <header id="header">
+            <div class="tipografia">
+                <a href="/index.html"><img src="/Assets/imagens/respire-tipografia.png" alt="respire-logo-tipografia"></a>
+            </div>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="mobo-btn" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/voluntarios.html">Voluntarios</a></li>
+                    <li><a href="/pages/dicas.html">Dicas</a></li>
+                    <li><a href="/pages/noticias.html">Notícias & Eventos</a></li>
+                    <li><a href="/pages/comunidades.html">Comunidades</a></li>
+                    <li><a href="../Pages/quemsomos.html">Quem somos</a></li>
+                    <li><a href="../Pages/apoiador.html">Apoiador</a></li>
+                </ul>
+            </nav>
+        </header>
 
+        <main>  
     <section id ="container">
 
       <div class="inicio">
@@ -96,9 +111,85 @@
 
 
      
- <div id="footer-root"></div>
-  </main>
+ <footer>
 
+    <section class="secao-apoio">
+    <div class="apoio-texto">
+        <h3>Apoio:</h3>
+        <p>Projetos que caminham com a gente na missão de tornar o cuidado com a saúde mental mais acessível.</p>
+    </div>
+    <div class="apoio-banner-logos">
+        <a href="https://www.proa.org.br" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/imagens/Captura de tela 2025-11-20 194918 1.svg" alt="Logo PROA" class="logo-parceiro"></a>
+        <a href="https://www.serasaexperian.com.br" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/imagens/Picsart_25-11-20_16-40-55-017.png" alt="Logo Serasa Experian" class="logo-parceiro"></a>
+
+        <img src="/assets/imagens/Picsart_25-11-22_02-11-37-864.png" alt="Logo CalmaMente" class="logo-parceiro">
+    </div>
+
+      <div id="footer_content">
+        <div id="footer_logo">
+       <img src="/Assets/imagens/logo-branca.png" alt="logo-respire" aria-label="Logo Respire">
+       <p>Informações e acolhimento<br>
+          ao seu alcance</p>
+        </div>
+        <ul class="listy">
+          <li>
+            <h3>Navegação</h3>
+          </li>
+          <li>
+            <a href="/index.html" class="footer-link">Home</a>
+          </li>
+          <li>
+            <a href="/pages/voluntarios.html" class="footer-link">Voluntarios</a>
+          </li>
+          <li>
+            <a href="/pages/dicas.html" class="footer-link">Dicas</a>
+          </li>
+          <li>
+            <a href="/pages/noticias.html" class="footer-link">Notícias & Eventos</a>
+          </li>
+          <li>
+            <a href="/pages/quemsomos.html" class="footer-link">Quem somos</a>
+          </li>
+          <li>
+            <a href="/pages/apoiador.html" class="footer-link">Apoiador</a>
+          </li>
+            <li>
+            <a href="/pages/comunidades.html" class="footer-link">Comunidades</a>
+          </li>
+        </ul>
+        <div id="footer_contacts">
+          <p>Contatos</p>
+          <div id="footer_social_media">
+            <a href="https://www.instagram.com/resp.lre?igsh=eWg1ODhwNjhkeXI1" class="footer-link" id="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/Projeto-Respire/.github.git" class="footer-link" id="github" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-github-alt"></i>
+            </a>
+           <a href="https://www.linkedin.com/company/projeto-respire"class="footer-link" id="linkedin">
+             <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <div id="footer_subscribe">
+            <h3>Envie um E-mail</h3>
+            <div id="input_group" class="caixa de email">
+              <input type="email" id="email">
+              <button>
+                <i class="fa-solid fa-envelope"></i>
+              </button>
+            </div>
+        </div>
+      </div>
+      <div id="footer_copy">
+        Copyright: &#169
+        2025 Respire. Todos os direitos reservados.
+      </div>
+  </footer> 
+  </main>
   <script type="module" src="/main.js"></script>
+  <script src="../Assets/js/voluntarios.js"></script>
 </body> 
 </html>

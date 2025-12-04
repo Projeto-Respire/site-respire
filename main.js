@@ -1,18 +1,4 @@
-import { Header } from './Componentes/header.js';
-import { Footer } from './Componentes/footer.js';
-
-document.addEventListener("DOMContentLoaded", () => {
-
-  const headerElement = document.getElementById('header-root');
-  const footerElement = document.getElementById('footer-root');
-
-  if (headerElement) {
-    headerElement.innerHTML = Header(); 
-  }
-  if (footerElement) {
-    footerElement.innerHTML = Footer();
-  }
-  const btnMobile = document.getElementById('mobo-btn');
+ const btnMobile = document.getElementById('mobo-btn');
   const nav = document.getElementById('nav');
 
   function toggleMenu(event) {
@@ -33,22 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     console.warn("Aviso: Elementos (mobo-btn ou nav) ainda não encontrados.");
   }
-  
-});
-
-// // ADD DE EVENTOS DENTRO DE NOTÍCIAS
-// async function carregarEventos() {
-//   try {
-//     const resp = await fetch("./eventos.html");
-//     const html = await resp.text();
-
-//     document.getElementById("eventos-container").innerHTML = html;
-//   } catch (erro) {
-//     console.error("Erro ao carregar eventos:", erro);
-//   }
-// }
-
-// carregarEventos();
 
 // // ADD DE EVENTOS DENTRO DE NOTÍCIAS & Conometro
 async function carregarEventos() {
@@ -70,3 +40,25 @@ async function carregarEventos() {
 }
 
 carregarEventos();
+
+
+//Vlibras
+
+document.addEventListener('DOMContentLoaded', function() {
+    const divWidget = document.createElement('div');
+    divWidget.innerHTML = `
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+    `;    
+    document.body.appendChild(divWidget);
+    const script = document.createElement('script');
+    script.src = "https://vlibras.gov.br/app/vlibras-plugin.js";
+    script.onload = function() {
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    };
+    document.body.appendChild(script);
+});

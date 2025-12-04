@@ -1,4 +1,9 @@
+@import url(global.css);
 @import url(../../Pages/login.html);
+
+*{
+    font-family: var(--fonte-principal);
+}
 
 
 body {
