@@ -1,18 +1,4 @@
-import { Header } from './Componentes/header.js';
-import { Footer } from './Componentes/footer.js';
-
-document.addEventListener("DOMContentLoaded", () => {
-
-  const headerElement = document.getElementById('header-root');
-  const footerElement = document.getElementById('footer-root');
-
-  if (headerElement) {
-    headerElement.innerHTML = Header(); 
-  }
-  if (footerElement) {
-    footerElement.innerHTML = Footer();
-  }
-  const btnMobile = document.getElementById('mobo-btn');
+ const btnMobile = document.getElementById('mobo-btn');
   const nav = document.getElementById('nav');
 
   function toggleMenu(event) {
@@ -33,22 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     console.warn("Aviso: Elementos (mobo-btn ou nav) ainda não encontrados.");
   }
-  
-});
-
-// // ADD DE EVENTOS DENTRO DE NOTÍCIAS
-// async function carregarEventos() {
-//   try {
-//     const resp = await fetch("./eventos.html");
-//     const html = await resp.text();
-
-//     document.getElementById("eventos-container").innerHTML = html;
-//   } catch (erro) {
-//     console.error("Erro ao carregar eventos:", erro);
-//   }
-// }
-
-// carregarEventos();
 
 // // ADD DE EVENTOS DENTRO DE NOTÍCIAS & Conometro
 async function carregarEventos() {

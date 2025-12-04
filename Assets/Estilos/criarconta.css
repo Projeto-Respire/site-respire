@@ -1,16 +1,11 @@
 @import url(../Estilos/global.css);
 
-
-
-
 *{
     font-family: var(--fonte-principal);
 }
 
 
 body{
-
-  background-image: url(../Assets/imagens/3840-x-2160-nature-9sy3n0jp5uignkkw.jpg);  
   overflow: hidden;
   font-family: var(--fonte-a)
 }
@@ -156,26 +151,6 @@ button:hover {
     color: #67636B;
     border: 1px solid black; 
 }
-
-
-.btn-github {
-    background-color: #24292e;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px; 
-    font-weight: 600;
-}
-
-.btn-github:hover {
-    background-color: #000;
-    transform: scale(1.02);
-}
-
-.btn-github svg {
-    fill: white; 
-}
-
 
 
 .btn-google {
