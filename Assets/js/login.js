@@ -18,7 +18,7 @@ function fazerLogin(event) {
         return; 
     } 
 
-    if (email === 'aluno@teste.com' && senha === 'senha123') {
+    if (email === 'welder@teste.com' && senha === '08011906') {
         alert("Login Aprovado! Redirecionando...");
         window.location.href = '../../index.html'; 
     } else {
@@ -36,6 +36,7 @@ function loginrede(rede) {
 
     setTimeout(() => {
 
+        sessionStorage.setItem('usuarioLogado','sim')
         alert("Login com " + rede + " Aprovado!");
         window.location.href = '../../index.html'; 
     }, 1500);
