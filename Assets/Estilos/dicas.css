@@ -1,10 +1,12 @@
 /* ONDA */
 .onda{
+    position: absolute;
     width: 100%;
     margin: 0 auto;
-    position: relative;
     margin-top: -10px;
     z-index: 1;
+    top: 0;
+    left: 0;
 }
 
 .onda img{
@@ -18,7 +20,7 @@
 
 .titulo-sobre-onda{
     position: absolute;
-    top: 80px;
+    top: 60px;
     left: 40px;
     color: white;
     font-size: 64px;
@@ -26,28 +28,28 @@
     z-index: 10;
 }
 
-/* corpo dicas */
+.onda, .onda * {
+    pointer-events: none;
+}
 
+/* corpo dicas */
 #dicas{
     font-family: "Poppins", sans-serif;
     margin-bottom: 54px;
+    max-width: 1800px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 0;
+    padding-top: 214px;
 }
 
 .dicas-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-
-    max-width: 1400px;
-    margin: 0 auto;
-    margin-top: -300px;
-    margin-bottom: 100px;
-
-    text-align: start;
-
-    position: relative;
-    z-index: 20;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  align-items: center;
+  gap: 0px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 #dicas h2{
@@ -63,40 +65,99 @@
     font-size: 22px;
     line-height: 32px;
     max-width: 1100px;
-    text-align: center;
+    text-align: left;
     margin: 24px auto;
-    padding: 0 200px;
     margin-top: -60px;
 }
 
+/* IMAGEM */
+.dicas-imagem{
+    position: relative;
+    width: 310px;   /* +20 */
+    height: 320px;
+    margin: 0 auto;
+
+    transform: translate(20%, 80px);
+}
+.dicas-imagem {
+  margin-top: 40px;
+}
+
+.circulo-roxo{
+    position: absolute;
+    inset: 0;
+    background: #5C2BA8;
+    border-radius: 50%;
+    transform: scaleX(0.90);
+    z-index: 1;
+}
+
+.imagem{
+    position: absolute;
+    width: 340px;
+    height: auto;
+
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 2;
+    filter: drop-shadow(0px 8px 12px rgba(0,0,0,0.35));
+}
 
 /* BOTÕES */
-.botoes-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
-  max-width: 1200px;
-  margin: 40px auto;
+.botoes-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 30px;
+    align-items: flex-start;
+    margin-top: -60px;
+
+    --offset-inicial: -180px;
 }
+
 
 
 .btn-dicas{
     width: 100%;
     height: auto;
-    background-color: #7D2EFF;
-    padding: 25px 80px;
-    color: white;
-    text-align: center;
+
+    background-color: #5C2BA8;
+    padding: 20px 64px;
     border-radius: 40px;
-    font-size: 22px;
-    font-weight: 600;
-    text-decoration: none;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.616);
     transition: 0.2s ease;
+
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    text-align: center;
 }
 
 .btn-dicas:hover{
-    transform: translateY(-4px);
+    background-color: #4A2290;
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.356);
 }
+
+.botoes-container a:nth-child(1){
+    transform: translateX(calc(0px + var(--offset-inicial)));
+}
+
+.botoes-container a:nth-child(2){
+    transform: translateX(calc(250px + var(--offset-inicial)));
+}
+
+.botoes-container a:nth-child(3){
+    transform: translateX(calc(450px + var(--offset-inicial)));
+}
+
+.botoes-container a:nth-child(4){
+    transform: translateX(calc(650px + var(--offset-inicial)));
+}
+
 
