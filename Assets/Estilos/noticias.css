@@ -8,11 +8,13 @@
 
 /* ONDA */
 .onda{
+    position: absolute;
     width: 100%;
     margin: 0 auto;
-    position: relative;
     margin-top: -10px;
     z-index: 1;
+    top: 0;
+    left: 0;
 }
 
 .onda img{
@@ -26,12 +28,16 @@
 
 .titulo-sobre-onda{
     position: absolute;
-    top: 80px;
+    top: 60px;
     left: 40px;
     color: white;
     font-size: 64px;
     font-weight: 700;
     z-index: 10;
+}
+
+.onda, .onda * {
+    pointer-events: none;
 }
 
 
@@ -40,6 +46,11 @@
 #noticias{
     font-family: "Poppins", sans-serif;
     margin-bottom: 54px;
+    max-width: 1800px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 0;
+    padding-top: 590px;
 }
 
 #noticias h2{
@@ -58,8 +69,7 @@
     max-width: 1100px;
     margin: -300px auto 0;
     padding: 20px;
-    margin-top: 150px;
-    }
+}
 
 #noticias h3{
     color: #3F3F3F;
