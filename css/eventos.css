@@ -1,0 +1,262 @@
+#eventos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #0066ff, #5b3c8b);
+  padding-block: 200PX;
+}
+
+.em-cima-de-todos2{
+  visibility: hidden;
+}
+
+.main-eventos{
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.em-cima-de-todos{
+  color: var(--cor-evento);
+  margin-bottom: 650px;
+  margin-top: 200px;
+  font-weight: bold;
+  font-family: var(--fonte-a);
+  font-size: 1.5rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.em-cima-de-todos2{
+  color: var(--cor-evento);
+  margin-bottom: 550px;
+  margin-top: 400px;
+  font-weight: bold;
+  font-family: var(--fonte-a);
+  font-size: 1.5rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.em-cima-de-todos3{
+   color: var(--cor-evento);
+  margin-bottom: 550px;
+  margin-top: 400px;
+  font-weight: bold;
+  font-family: var(--fonte-a);
+  font-size: 1.5rem;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+.word {
+  transform: translateY(115px);
+  transition: transform .9s;
+}
+
+h1{
+  font-family: var(--fonte-a);
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+
+.colab {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  gap: 60px;
+  flex-direction: row; 
+}
+
+.x {
+  font-family: var(--fonte-a);
+  font-size: 3rem;
+  color:white;
+  font-weight: bold;
+  margin-top: 90px;
+}
+
+.colab-item {
+  text-align: center;
+  font-family: var(--fonte-a);
+}
+
+.colab-item img {
+  width: 100%;
+  height: 200px;
+  border-radius: 100%;
+  object-fit: cover;
+  background-color: white;
+}
+
+.colab-item p {
+  font-size: 1.5rem;
+  color: white; 
+  margin-top: 15px; 
+}
+
+
+.relogio{
+  font-family: var(--fonte-a);
+    display: flex;           
+    justify-content: center; 
+    gap: 60px;               
+    margin-top: 60px;        
+    margin-bottom: 40px;
+}
+
+.box {
+    font-family: var(--fonte-a);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    min-width: 80px;         
+}
+
+.box .valor {
+    font-size: 5rem;         
+    font-weight: 700;        
+    color: white;                    
+}
+
+.box .nome {
+    font-size: 1rem;     
+    color: #e0e0e0;          
+    margin-top: 10px;        
+    text-transform: capitalize; 
+}
+
+
+.botao button{
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  transition: 0.5s;
+
+}
+.botao{
+  display: flex;
+  justify-content: center;
+}
+
+
+button:hover {
+   cursor: pointer;
+    background-color: #7335EE;
+    color: #ffffff;
+    transform: scale(1.05);
+    
+}
+
+.em-cima-de-todos2{
+
+  margin-bottom: 350px;
+}
+
+.futures{
+  display: flex;
+  gap: 50px;
+}
+.evento-breve{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+width: 350px;
+height: 500px;
+border-radius: 20px;
+padding: 0px 15px;
+transition: 0.5s;
+margin-bottom: 100px;
+overflow: hidden;
+object-fit: cover;
+}
+.evento-breve img{
+  width: 100%;
+  height: 448px;
+  border-radius: 10px;
+}
+
+.evento-breve:hover{
+  transform: translateY(-175px); 
+  height: 448px;
+  width: 400px;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+
+h1 {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+
+  .colab {
+    flex-direction: column;
+    gap: 30px; 
+  }
+
+  .x{
+    margin: 0px 0px;
+    align-self: center;
+  }
+  
+  .colab-item img {
+    width: 30%;
+    height: 10%;
+  }
+  .colab-item p {
+    font-size: 1.2rem; 
+  }
+  
+ 
+
+  #eventos {
+   margin-top: 100px;
+   margin-bottom: 100px;
+   padding-bottom: 50px;
+
+}
+
+.relogio {
+        
+        flex-direction: row;
+        gap: 8px; 
+        margin-top: 30px;
+        padding: 0 10px;
+
+
+}
+
+.box .valor {
+        font-size: 2.5rem; 
+    }
+    
+    .box .nome {
+        font-size: 0.7rem; 
+        margin-top: 2px;
+    }
+
+    button{
+      background-color: #ffffff;
+      color: #5C2DA8;
+    }
+
+    button:hover {
+    cursor: none;
+      
+    color: #ffffff;
+    transform: none;
+    box-shadow: none;
+}
+}

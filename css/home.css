@@ -1,0 +1,176 @@
+.caixas {
+    background-image: linear-gradient(to right,#004AAD,#10B3AA );
+    height: 300px;
+    width: 100%;
+    z-index: 0;
+}
+
+.ryu{
+  width: 80%;
+}
+
+.refugio{
+  font-size: 2rem;
+  color: white;
+  font-family: var(--fonte-a);
+}
+
+.texto-inicio p{
+  font-size: 1rem;
+  color: white;
+  font-family: var(--fonte-a);
+}
+.maine{
+  padding: 35px 0px;
+}
+
+.geral1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-geral h2{
+    padding-bottom: 20px;
+}
+
+.texto-inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 45ch;
+    margin-left: 150px;
+    gap: 25px;
+}
+
+.poltrona{
+    width: 500px;
+    position: relative;
+   top: 50px;
+   left: 110px;
+
+}
+
+
+
+.poltrona img {
+  width: 100%;
+  margin-left: -250px;
+    
+}
+
+.botao-h {
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    background: white;
+    color: #7335EE;
+    font-weight: 900;
+    position: relative;
+    right: 100px;
+    transition: 0.5s;
+    
+}
+
+.img3{
+  width: 10%;
+  
+}
+
+
+.botao-h:hover {
+    transform: scale(1.08);
+    background: #7335EE;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.s1,.s2,.s3{
+  max-width: 1700px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 250px;
+
+}
+
+.imagem{
+  width:2%;
+}
+
+.direita,.esquerda,.maisum{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.di,.die,.dada{
+  font-family: var(--fonte-a);
+  width: 450px;
+  font-size: 1.5rem;
+}
+
+.maine{
+  font-size: 18px;
+  font-family: var(--fonte-a);
+  opacity: 50%;
+}
+
+.didi,.didie,.dado{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.bolao button{
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    background: white;
+    color: #7335EE;
+    font-weight: 900;
+    transition: 0.5s;
+    
+}
+
+.bolao button:hover {
+    transform: scale(1.08);
+    background: #7335EE;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.globlo{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.img2{
+  width: 100%;
+  display: block;
+}
+
+.nunca{
+  position: absolute;
+  top: 25%;
+  left: 4%;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-family: var(--fonte-a);
+}
+
+.direita{
+  margin-left: 120px;
+}
+

@@ -1,0 +1,297 @@
+.primeiros-cards .meet{             
+  width: 100%;
+  display: flex;           
+  justify-content: center; 
+  align-items: center;   
+  gap: 50px;
+}
+.swal2-title {
+  font-family:'Poppins', sans-serif;
+}
+
+.swal2-text {
+  font-family:'Poppins', sans-serif;
+}
+
+.swal2-confirmButtonText {
+  font-family:'Poppins', sans-serif;
+ 
+}
+
+  
+.primeiros-cards{
+  margin-top: 100px;
+}
+
+.efeito-reveal{
+  visibility: hidden;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px; 
+  height: 500px;
+  border-radius: 20px; 
+  background-color: rgb(0, 0, 255);
+  color: white;
+  padding: 50px;
+  font-family: var(--fonte-principal);
+}
+
+.spazin{
+padding-bottom: 10px;
+
+}
+
+.txt{
+  display: flex;
+  font-size: 2rem;
+
+}
+
+.card img{
+  border-radius: 20px;
+}
+
+.ajuda{
+  font-family: var(--fonte-principal);
+  color: var(--cor-evento);
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+.compartilhar {
+    
+    background-color:  rgb(0, 51, 128); 
+    border-radius: 24px;      
+    padding: 40px;         
+    width: 100%;
+    max-width: 380px;         
+    border: none;              
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+
+.part2 span:nth-child(1) {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+    opacity: 0.8;
+    display: block;
+}
+
+.part2 span:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 35px;
+    display: block;
+}
+
+.part2 p {
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+.apoioscardss{
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 2px solid #000000;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.facebook:hover{
+    background-color: #0080ff;
+    color: #F5F0E6;
+}
+
+.twitter:hover{
+  background-color: #000000
+}
+
+.whatsapp:hover{
+background-color: #25D366 
+}
+
+.instagram:hover{
+  background-color: #E1306C;
+}
+
+.btn-destaque {
+    display: inline-block;     
+    background-color: #343A40; 
+    color: #fff;               
+    text-decoration: none;     
+    padding: 14px 28px;          
+    border-radius: 50px;         
+    font-weight: 600;           
+    margin-top: 20px;        
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+
+.btn-destaque:hover {
+    transform: scale(1.05);    
+    background-color: #23272b;  
+}
+.btn-valor{
+  padding: 10px 5px;
+  border-radius: 20px;
+  width: 200px;
+  display: block; 
+  margin: 0 auto;
+  transition: transform 0.2s ease;
+
+}
+
+.btn-valor:hover{
+  transform: scale(1.05);    
+  background-color: #ffffff;  
+  color: #5C2BA8;
+  box-shadow: 0 4px #000000;
+  cursor: pointer;
+
+}
+
+.span-apoio{
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 5px;
+}
+
+.lista-beneficios{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lista-beneficios li{
+  font-size: 15px;
+}
+
+.logo-preco{
+
+  margin-right: 2px;
+}
+
+.valores{
+  margin-bottom: 100px;
+}
+
+
+@media (max-width: 768px) {
+  .primeiros-cards .meet {
+    flex-direction: column;
+    margin-top: 120px;
+  }
+  .card{
+    width: 20%;
+    height: 20%;
+  }
+   .numero2{
+  padding: 25px;
+
+  }
+  .apoioscardss{
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  text-align: left;
+}
+.facebook{
+background-color: #0080ff;
+color: #F5F0E6;
+}
+.facebook:hover{
+  background-color: #0b539b;
+}
+
+.twitter{
+  background-color: #000000
+}
+
+.twitter:hover{
+  background-color: #201f1f;
+}
+
+.whatsapp{
+background-color: #25D366 
+}
+
+.whatsapp:hover{
+  background-color: #21b356;
+}
+
+.instagram{
+  background-color: #E1306C;
+}
+
+.instagram:hover{
+  background-color: #bd295a;
+}
+
+.btn-valor:hover{   
+  box-shadow: 0 4px #000000;
+  transform: none;
+  transition: none;
+  background-color: #ffffff;  
+  color: #5C2BA8;
+
+}
+.btn-valor{
+  transform: none;
+  transition: none;
+  color: #5C2BA8;
+  background-color: #ffff;
+
+}
+
+.btn-destaque {
+    box-shadow: none;
+    transform: none;
+    transition: none;
+    background-color: #40454b;  
+}
+
+.btn-destaque:hover {
+    box-shadow: 0 4px #000000;
+    transform: none;
+    transition: none;
+    background-color: #23272b;  
+}
+
+}
