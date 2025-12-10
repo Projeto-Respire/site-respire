@@ -158,44 +158,43 @@
 
 @media (max-width: 768px) {
 
-    /* 1. Ajuste do Header */
+
     #header {
         padding: 0.5rem 1rem;
-        height: auto; /* Deixa a altura se ajustar */
+        height: auto; 
     }
 
-    /* Esconde o menu de texto no celular (geralmente usamos JS para abrir um menu lateral) */
-    /* Se quiser manter os links visíveis, remova o display: none abaixo */
+    
     #menu {
         display: none; 
     }
 
     #mobo-btn {
-        display: block; /* Mostra o ícone de menu hambúrguer */
+        display: block; 
         font-size: 2rem;
         cursor: pointer;
     }
 
-    /* 2. Ajuste da Seção Principal (Sons) */
+   
     #sons {
-        /* Reduzimos o padding gigante de 100px para 40px no topo */
+     
         padding: 40px 20px 0px; 
     }
 
-    /* 3. Tipografia */
+   
     .titulo {
-        font-size: 28px; /* Diminui o título */
+        font-size: 28px; 
         line-height: 1.2;
     }
 
     .paragrafo {
-        font-size: 18px; /* Diminui o texto */
+        font-size: 18px;
         width: 100%;
     }
 
-    /* 4. Botões em Coluna */
+   
     .botoes {
-        /* Muda de 3 colunas para 1 coluna */
+       
         grid-template-columns: 1fr; 
         gap: 15px;
         padding: 30px 0;
@@ -203,18 +202,18 @@
     }
 
     .botoes li a {
-        padding: 20px 0; /* Botões um pouco menores na altura */
+        padding: 20px 0;
         font-size: 18px;
     }
 
-    /* Remove o efeito de aumentar muito (scale) no celular, pois pode travar a tela */
+    
     .botoes li a:hover, #header a:hover {
         transform: scale(1.05); 
     }
 
-    /* 5. Player de Áudio */
+  
     .audio-container {
-        width: 100%; /* Ocupa a largura total disponível */
+        width: 100%; 
         max-width: 100%;
     }
 }
