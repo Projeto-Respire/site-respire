@@ -1,6 +1,7 @@
 let animacaodecomunidades = gsap.matchMedia();
 
-animacaodecomunidades.add("(min-width: 768px)", () => {
+
+//SUBIDA DE CARD
 
 gsap.from(".quadrado", {
     scrollTrigger: {
@@ -11,10 +12,11 @@ gsap.from(".quadrado", {
     stagger: 0.5,  
     duration: 2.5
     });
-});
 
 
 
+
+// SUBIDA DE TXT
 const transicao = new SplitType('.mini-txt');
 
 gsap.to('.word',{

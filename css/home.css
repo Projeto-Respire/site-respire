@@ -5,6 +5,8 @@
     z-index: 0;
 }
 
+
+
 .ryu{
   width: 80%;
 }
@@ -30,6 +32,7 @@
     max-width: 1700px;
     margin: 0 auto;
     padding: 0 20px;
+    
 }
 
 .container-geral h2{
@@ -79,6 +82,7 @@
   width: 10%;
   
 }
+
 
 
 .botao-h:hover {

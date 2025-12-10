@@ -8,6 +8,18 @@
     --cor-evento: #3F3F3F;
 }
 
+.swal2-title {
+  font-family:'Poppins', sans-serif;
+}
+
+.swal2-text {
+  font-family:var(--fonte-principal)
+}
+
+.swal2-confirmButtonText {
+  font-family:'Poppins', sans-serif;
+ 
+}
 
 @keyframes entrarSuave {
     from {
@@ -43,6 +55,7 @@ main {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-color: #f4f1ea;
 }
 
 .meet {
@@ -61,6 +74,7 @@ li{
 a{
   text-decoration: none;
   cursor: pointer;
+  color: var(--fonte-a);
 }
 
 a:hover{
