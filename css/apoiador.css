@@ -5,23 +5,13 @@
   align-items: center;   
   gap: 50px;
 }
-.swal2-title {
-  font-family:'Poppins', sans-serif;
-}
-
-.swal2-text {
-  font-family:'Poppins', sans-serif;
-}
-
-.swal2-confirmButtonText {
-  font-family:'Poppins', sans-serif;
- 
-}
-
   
 .primeiros-cards{
   margin-top: 100px;
 }
+
+
+
 
 .efeito-reveal{
   visibility: hidden;
@@ -30,7 +20,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   width: 500px; 
   height: 500px;
   border-radius: 20px; 
@@ -39,6 +29,7 @@
   padding: 50px;
   font-family: var(--fonte-principal);
 }
+
 
 .spazin{
 padding-bottom: 10px;
@@ -49,6 +40,12 @@ padding-bottom: 10px;
   display: flex;
   font-size: 2rem;
 
+}
+
+.txtt{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .card img{
@@ -62,6 +59,8 @@ padding-bottom: 10px;
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
+
 
 
 .compartilhar {
@@ -150,21 +149,22 @@ background-color: #25D366
 
 .btn-destaque {
     display: inline-block;     
-    background-color: #343A40; 
-    color: #fff;               
-    text-decoration: none;     
+    background-color: #ffffff; 
+    color: #000000;                   
     padding: 14px 28px;          
     border-radius: 50px;         
     font-weight: 600;           
     margin-top: 20px;        
     text-align: center;
     transition: transform 0.2s ease;
+    width: 100%;
+    cursor: pointer;
 }
 
 
 .btn-destaque:hover {
     transform: scale(1.05);    
-    background-color: #23272b;  
+    color: #5C2BA8  
 }
 .btn-valor{
   padding: 10px 5px;

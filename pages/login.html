@@ -4,16 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/login.css">
-  <title>comunidades</title>
+  <link rel="stylesheet" href="/css/global.css">
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>Login</title>
 </head>
 <body>
   <main>
+      <section class="login-container">
+      </div>
+      <div class="login-card">
+        <div class="esquedo">
+          <img src="/img/psotivo.png" alt="">
+        </div>
 
-    
-    
-    
+        <div class="dirito">
+          
+          <h2 class="bem">Bem-vindo (a),<br>de volta :)</h2>
+          
+          <form onsubmit="fazerLogin(event)">
+            <div class="input-group">
+              <input type="email" id="email" required>
+              <label>E-mail</label>
+            </div>
+            
+            <div class="input-group">
+              <input type="password" id="senha" required>
+              <label>Senha</label>
+            </div>
+            <button type="submit" class="btn-entrar">Entrar</button>
+            
+            <div class="divisor">
+              <span>ou entre com</span>
+            </div>
+            
+            <button type="button" class="btn-google" onclick="loginrede('google')">
+              <img src="/assets/google.svg" alt="" class="google">
+              Entrar com Google
+            </button>
+          </form>
+          
+          <p class="registro-link">
+            Não tem conta? <a href="/pages/login.html">Crie agora</a>
+          </p>
+          <p> <a href="home.html" class="esqueci">Entrar como visitante</a></p>    
+        </div>
+      </div>
+    </section>
   </main>
-  </main>
-  <script src="../js/login.js"></script>
+  <script src="/js/login.js"></script>
 </body>
 </html>

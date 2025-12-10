@@ -30,6 +30,7 @@ const countdown = () => {
 setInterval(countdown, 1000);
 
 
+//split-txt
 const transicao = new SplitType('.em-cima-de-todos');
 
 gsap.to('.word',{
@@ -37,44 +38,12 @@ gsap.to('.word',{
   y: 0, 
   delay: 0.2,
   duration: .1,
-  stagger: 0.05,
-  scrollTrigger: {
-    trigger: ".em-cima-de-todos",
-    start: "top boittom",
-    toggleActions: "play none none none",
-    end: "bottom",
-    once: true
-
-  }    
+  stagger: 0.05, 
 })
 
 
-const transicao2 = new SplitType('.em-cima-de-todos');
-
-gsap.to('.word',{
-
-  y: 0, 
-  delay: 0.2,
-  duration: .1,
-  stagger: 0.05,
-  scrollTrigger: {
-    trigger: ".em-cima-de-todos",
-    start: "top boittom",
-    toggleActions: "play none none none",
-    end: "bottom",
-    once: true
-
-  }    
-})
-
-
-
+//scrollReval
 window.revelar = ScrollReveal({reset:true})
-
-const mediaQuery = window.matchMedia('(min-width: 768px)');
-
-function aplicarLogicaResponsiva(mediaQuery) {
-    if (mediaQuery.matches) {
 
     revelar.reveal('.evento-breve',
 {    
@@ -97,19 +66,3 @@ function aplicarLogicaResponsiva(mediaQuery) {
     viewFactor: 0.2,
     reset: false
 })
- 
-} else {
-
-    revelar.reveal('.evento-breve',
-{
-   origin: 'bottom',
-    distance: '90px',
-    duration: 2000,
-    delay: 500,
-    interval: 200,
-    reset: false
-})
-
-}
-}
-aplicarLogicaResponsiva(mediaQuery);
