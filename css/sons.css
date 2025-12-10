@@ -47,8 +47,12 @@
 }
 
 #sons{
-    background: linear-gradient(to bottom,  #004AAD , #6FC6B8 );
+    
     padding: 100px 100px 0px;
+}
+
+.cores{
+   background: linear-gradient(to bottom,  #004AAD , #6FC6B8 );
 }
 
 .container-sons{
