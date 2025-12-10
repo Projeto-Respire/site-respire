@@ -6,18 +6,18 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 1, 
             name: "Ana", 
             // Caminho relativo: pasta/nome-do-arquivo
-            img: "/Assets/imagens/mid-shot-woman-therapist-with-clipboard (1).jpg" 
+            img: "/img/mid-shot-woman-therapist-with-clipboard (1).jpg" 
         },
         { 
             id: 2, 
             name: "Julia", 
-            img: "/Assets/imagens/mid-shot-woman-therapist-with-clipboard.jpg" 
+            img: "/img/mid-shot-woman-therapist-with-clipboard.jpg" 
         },
 
         { 
             id: 5, 
             name: "Camila", 
-            img: "/Assets/imagens/smiley-elegant-businesswoman-holding-clipboard.jpg" 
+            img: "/img/smiley-elegant-businesswoman-holding-clipboard.jpg" 
         }
     ];
 
