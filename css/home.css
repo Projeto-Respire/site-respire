@@ -5,7 +5,10 @@
     z-index: 0;
 }
 
-
+.img3 img{
+  width: 326px;
+  height: auto;
+}
 
 .ryu{
   width: 80%;
@@ -104,9 +107,15 @@
 
 }
 
-.imagem{
-  width:2%;
+.s2{
+  display: grid;
+  gap: 250px;
 }
+
+.s1{
+  gap: 60px;
+}
+
 
 .direita,.esquerda,.maisum{
   display: flex;

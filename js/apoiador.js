@@ -22,8 +22,6 @@ botaoSemente.addEventListener('click', function(event) {
 
 //REVELACAO DE CARDS
 window.revelar = ScrollReveal({reset:true})
-
-
     revelar.reveal('.ajuda',{
     duration: 3000,
     distance: '90px',
