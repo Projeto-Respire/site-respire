@@ -1,10 +1,9 @@
 @import url(global.css);
 
+
 *{
     font-family: var(--fonte-principal);
 }
-
-
 
 .onda{
     position: absolute;
@@ -80,13 +79,13 @@
 /* IMAGEM */
 .dicas-imagem{
     position: relative;
-    width: 310px;   /* +20 */
+    width: 310px;
     height: 320px;
     margin: 0 auto;
 
     transform: translate(20%, 80px);
 }
-.dicas-imagem {
+.dicas-imagem{
   margin-top: 40px;
 }
 
@@ -168,3 +167,66 @@
 }
 
 
+/* RESPONSIVO AQUI !!!! */
+
+@media (max-width: 768px){
+
+    /* ONDA */
+  .onda img{
+    transform: scale(4.0) scaleY(0.7);
+    transform-origin: top;
+  }
+
+  .titulo-sobre-onda{
+    top: 40px;
+    left: 20px;
+    font-size: 42px;
+  }
+
+  /* CORPO */
+  
+  .dicas-container{
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 90%;
+  }
+
+  .dicas-texto p{
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .dicas-imagem{
+    transform: none;
+    width: 240px;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  .imagem{
+    width: 260px;
+    bottom: -20px;
+  }
+
+  /* BOTÕES!! */
+  .botoes-container{
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .btn-dicas{
+    width: 100%;
+    max-width: 280px;
+    padding: 18px 20px;
+    font-size: 18px;
+  }
+
+  .botoes-container a:nth-child(1),
+  .botoes-container a:nth-child(2),
+  .botoes-container a:nth-child(3),
+  .botoes-container a:nth-child(4){
+    transform: none !important;
+  }
+}

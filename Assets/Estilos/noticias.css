@@ -36,7 +36,7 @@
     z-index: 10;
 }
 
-.onda, .onda * {
+.onda, .onda *{
     pointer-events: none;
 }
 
@@ -51,6 +51,7 @@
     position: relative;
     margin-top: 0;
     padding-top: 590px;
+
 }
 
 #noticias h2{
@@ -83,6 +84,10 @@
 .noticias-container h2{
   font-size: 2.5rem;
   color: var(--cor-fundo-principal);
+}
+
+#eventos-container{
+    margin-bottom: 200px;
 }
 
 /* CARD */
@@ -155,26 +160,110 @@
 
 /* ANIMAÇOES */
 
-.card-noticia button {
+.card-noticia button{
     transition: background .25s, transform .1s;
 }
 
-.card-noticia button:hover {
+.card-noticia button:hover{
     background: #432ca1;
     transform: scale(1.04)
 }
 
-.card-noticia button:active {
+.card-noticia button:active{
     transform: scale(.95);
 }
 
-.fade-in {
+.fade-in{
   opacity: 0;
   transform: translateY(20px);
   transition: opacity .8s ease, transform .8s ease;
 }
 
-.fade-in.show {
+.fade-in.show{
   opacity: 1;
   transform: translateY(0);
+}
+
+
+@media (max-width: 768px){
+
+    .onda img{
+        transform: scale(1.35) scaleY(0.7);
+        transform-origin: top;
+    }
+
+    .titulo-sobre-onda{
+        font-size: 42px;
+        top: 50px;
+        left: 24px;
+    }
+
+    .onda img{
+        transform: scale(4.0) scaleY(0.7);
+        transform-origin: top;
+    }
+
+    .titulo-sobre-onda{
+        top: 40px;
+        left: 20px;
+        font-size: 42px;
+    }
+
+    #noticias{
+        padding-top: 360px;
+    }
+
+    #noticias h3{
+        font-size: 20px;
+        line-height: 32px;
+        margin-top: 80px;
+        margin-left: 30px;
+        margin-bottom: -50px;
+    }
+
+    .noticias-container{
+        margin-top: -180px;
+        padding: 10px;
+        gap: 40px;
+    }
+
+    .card-noticia{
+        grid-template-columns: 1fr;
+        padding: 16px;
+        border-radius: 30px;
+        gap: 16px;
+    }
+
+    .card-img img{
+        height: 200px;
+        border-radius: 24px;
+    }
+
+    .card-conteudo{
+        margin: 0;
+    }
+
+    .card-conteudo h4{
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 12px;
+    }
+
+    .card-conteudo span{
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+
+    .btn-noticia{
+        padding: 10px;
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+        border-radius: 12px;
+    }
+
+    #eventos-container{
+        margin-bottom: 120px;
+    }
+
 }
