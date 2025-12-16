@@ -1,30 +1,33 @@
+@import url(global.css);
+@import url(../../Pages/login.html);
+
+*{
+    font-family: var(--fonte-principal);
+}
+
+
+body {
+    height: 3000px;
+}
+
 .container-geral-somos {
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     width: 100%;
-
-}
-
-h2,p{
-    font-family: var(--fonte-a);
-}
-
-.main-quem{
-    background-color: #f4f1ea; 
 }
 
 .texto-somos p{
     color: black;
     font-size: 30px;
-    width: 36ch;
+    width: 40ch;
     text-align: right;
-    margin-left: -180px; 
-    margin-top: 150px;
+    margin-right: 100px;
 }
 
 .img-somos {
-    width: 400px;
+    width: 250px;
     position: relative;
     left: 150px;
 }
@@ -39,12 +42,11 @@ h2,p{
     background:#EFEFEF;
     border-radius: 80px;
     height: 542px;
-    width: 1000px;
-    padding: 0 px;
+    width: 1270px;
+    padding: 0 15px;
     justify-self: center;
     margin-bottom: 60px;
     margin-top: 40px;
-    border: 1px solid black;
 }
 
 .texto-somos2{
@@ -73,10 +75,33 @@ h2,p{
     background: #3EBBB7;
     margin-top: 30px;
     font-weight: 900;
-    color: #ffff;
-    cursor: pointer;
 }
 
+.circulos {
+    width: 350px;
+    position: relative;
+    left: 100px;
+    
+}
+
+.circulos img {
+    width: 90%;
+}
+
+
+.circulosroxo{
+    width: 350px;
+    position: relative;
+    left: 100px;
+}
+.circulosroxo img {
+    width: 90%;
+}
+
+.img-somo img{
+    width: 50%;
+        
+}
 
 
 .botao-so2 {
@@ -86,22 +111,17 @@ h2,p{
     background: #8B6AC3;
     margin-top: 30px;
     font-weight: 900;
-    color: #ffff;
-    cursor: pointer;
 }
-
 
 
 .caixa-somos2 {   
     background:#EFEFEF;
     border-radius: 80px;
     height: 842px;
-    width: auto;
+    width: 1270px;
     padding: 0 15px;
     justify-self: center;
-    margin-bottom: 160px;
-    margin-top: 100px;
-    border: 1px solid black;
+    margin-bottom: 60px;
 }
 
 .texto-fin {
@@ -133,17 +153,64 @@ h2,p{
     width: 100%;
 }
 
+@media screen and (max-width: 1200px) {
+    .container-geral-somos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
 
-.circulos img{
-    width: 80%;
-    height: 80%;
-    border-radius: 20px;
-    margin-left: 40px;
-}
+    .texto-somos p {
+        text-align: center;
+        margin: 0;
+        width: auto;
+        font-size: 24px;
+       
+    }
 
-.dois{
-    width: 100%;
-}
+    .img-somos {
+        position: static;
+        width: 80%;
+    }
 
+   
 
+    .caixa-somos, .caixa-somos2 {
+        width: 90%;
+        height: auto;
+        padding: 30px 15px;
+        margin-bottom: 40px;
+        padding-right: 65px;
+        justify-content: center;
+    }
+
+    .texto-somos2 h2, .texto-fin h2 {
+        text-align: center;
+        width: auto;
+    }
+
+    .texto-somos2 p, .texto-fin p {
+        text-align: center;
+        width: auto;
+    }
+
+    .circulos, .homem, .mulher-quem {
+      display: none;
+    }
+
+    .circulosroxo {
+        display: none;
+    }
+    .img-fin {
+        margin: 20px auto 0 auto;
+        width: 80%;
+    }
+
+    .botao-so, .botao-so2 {
+        width: 100%;
+    }
     
+}
+
+.homem{}

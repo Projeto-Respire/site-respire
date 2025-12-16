@@ -186,7 +186,7 @@ h1{
 
 .botao{
   padding: 10px 15px;
-  background-color: rgb(0, 51, 128);
+  background-color: #7335ee;
   color: white;
   margin-top: 30px;
   border-radius: 10px;
@@ -307,7 +307,6 @@ box-shadow: 5px 14px 20px 10px #ded7d7;
 
 h3{
   padding: 10px 2px;
-  margin-bottom: -50px;
 }
 
 .firstP2{
@@ -399,6 +398,7 @@ h1{
   font-size: 1rem;
   width: 100%;
   text-align: center;
+  padding: 0 99px
 }
 
 .barrapesquisa{
@@ -449,7 +449,7 @@ display: none;
 .data{
   width: 120px;
   transition: none;
-  margin-left: -80px;
+  margin-left: -85px;
 }
 
 .data:hover{
@@ -459,16 +459,16 @@ display: none;
 }
 
 .dois{
-  margin-left: -98px;
+  margin-left: -85px;
 }
 .detalhes{
-  width: 60px;
+  width: 80px;
   height: 60px;
 
 }
 
 .tres{
-  margin-left: -95px;
+  margin-left: -85px;
 }
 
 .detalhes:hover{

@@ -28,20 +28,11 @@
 
 .em-cima-de-todos2{
   color: var(--cor-evento);
-  margin-top: 100px;
+  margin-top: 200px;
   font-weight: bold;
-  font-family: var(--fonte-a);
-  font-size: 1.5rem;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-.em-cima-de-todos3{
-   color: var(--cor-evento);
   margin-bottom: 50px;
-  font-weight: bold;
   font-family: var(--fonte-a);
   font-size: 1.5rem;
-  text-align: center;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
@@ -251,4 +242,26 @@ h1 {
     transform: none;
     box-shadow: none;
 }
+
+.em-cima-de-todos{
+  font-size: 1rem;
+  margin-bottom: 0px;
+  max-width: 30ch;
+}
+
+.em-cima-de-todos2{
+  font-size: 1rem;
+  margin-bottom: 250px;
+  max-width: 30ch;
+}
+.futures{
+  display: flex;
+  flex-direction: column;
+}
+.evento-breve:hover{
+  transform: none; 
+  width: 350px;
+  height: 500px;
+}
+
 }
