@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter..." rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/Assets/Estilos/noticias.css">
+  <link rel="stylesheet" href="/css/noticias.css">
   
 </head>
 <body>
@@ -24,13 +24,14 @@
                     <span id="hamburger"></span>
                 </button>
                 <ul id="menu" role="menu">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/pages/voluntarios.html">Voluntarios</a></li>
-                    <li><a href="/pages/dicas.html">Dicas</a></li>
-                    <li><a href="/pages/noticias.html">Notícias & Eventos</a></li>
-                    <li><a href="/pages/comunidades.html">Comunidades</a></li>
-                    <li><a href="../Pages/quemsomos.html">Quem somos</a></li>
-                    <li><a href="../Pages/apoiador.html">Apoiador</a></li>
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="voluntarios.html">Voluntarios</a></li>
+                  <li><a href="dicas.html">Dicas</a></li>
+                  <li><a href="noticias.html">Notícias</a></li>
+                  <li><a href="eventos.html">Eventos</a></li>
+                  <li><a href="comunidades.html">Comunidades</a></li>
+                  <li><a href="quemsomos.html">Quem somos</a></li>
+                  <li><a href="apoiador.html">Apoiador</a></li>
                 </ul>
             </nav>
         </header>
@@ -41,7 +42,7 @@
       <!-- ONDA AQ -->
       
       <div class="onda">
-        <img src="/Assets/imagens/onda-noticias.svg">
+        <img src="/img/onda-noticias.svg">
         <h2 class="titulo-sobre-onda">NOTÍCIAS</h2>
       </div>
       
@@ -50,11 +51,9 @@
         
         <h3>Acompanhe as principais notícias<br>
           e eventos acerca da saúde mental!</h3>
-          
-          <div id="eventos-container"></div>
 
           <article class="card-noticia">
-            <div class="card-img"><img src="/Assets/imagens/caps.jpg" alt="Imagem da notícia"></div>
+            <div class="card-img"><img src="/img/caps.jpg" alt="Imagem da notícia"></div>
 
             <div class="card-conteudo">
                 <h4>SUS realiza 192 mil atendimentos de
@@ -62,24 +61,24 @@
                 de 2025</h4>
                 <span class="fonte-data">gov.br · 10/10/2025</span>
 
-                <button class="btn-noticia"><a href="https://www.gov.br/saude/pt-br/assuntos/noticias/2025/outubro/sus-realiza-192-mil-atendimentos-de-saude-mental-no-primeiro-semestre-de-2025?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">Ler notícia</a></button>
+                <a class="btn-noticia" href="https://www.gov.br/saude/pt-br/assuntos/noticias/2025/outubro/sus-realiza-192-mil-atendimentos-de-saude-mental-no-primeiro-semestre-de-2025?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">Ler notícia</a>
               </div>
             </article>
 
           <article class="card-noticia">
-            <div class="card-img"><img src="/Assets/imagens/discussao.jpg" alt="Imagem da notícia"></div>
+            <div class="card-img"><img src="/img/discussao.jpg" alt="Imagem da notícia"></div>
 
             <div class="card-conteudo">
                 <h4>Brasil: Afastamentos por problemas
                 de saúde mental aumentam 134%</h4>
                 <span class="fonte-data">ONU Brasil · 17/04/2025</span>
 
-                <button class="btn-noticia"><a href="https://brasil.un.org/pt-br/292926-brasil-afastamentos-por-problemas-de-sa%C3%BAde-mental-aumentam-134?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">Ler notícia</a></button>
+                <a class="btn-noticia" href="https://brasil.un.org/pt-br/292926-brasil-afastamentos-por-problemas-de-sa%C3%BAde-mental-aumentam-134?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">Ler notícia</a>
             </div>
           </article>
 
           <article class="card-noticia">
-            <div class="card-img"><img src="/Assets/imagens/saudemental.jpg" alt="Imagem da notícia"></div>
+            <div class="card-img"><img src="/img/saudemental.jpg" alt="Imagem da notícia"></div>
 
             <div class="card-conteudo">
                 <h4>Epidemia Silenciosa: Saúde Mental
@@ -87,7 +86,7 @@
                 Preocupação dos Brasileiros</h4>
                 <span class="fonte-data">Forbes Brasil · 10/10/2025</span>
 
-                <button class="btn-noticia"><a href="https://forbes.com.br/carreira/2025/10/epidemia-silenciosa-saude-mental-ultrapassa-cancer-e-se-torna-a-maior-preocupacao-dos-brasileiros/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">Ler notícia</a></button>
+                <a class="btn-noticia" href="https://forbes.com.br/carreira/2025/10/epidemia-silenciosa-saude-mental-ultrapassa-cancer-e-se-torna-a-maior-preocupacao-dos-brasileiros/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">Ler notícia</a>
             </div>
           </article>
 
@@ -98,9 +97,6 @@
 
       </section>
       <!-- FIM DA SECTION AQUI -->
-    
-
-      <script type="module" src="/Assets/js/eventos.js"></script>
 
      <footer>
 
