@@ -1,17 +1,8 @@
 *{
   font-family: var(--fonte-principal);
 }
-
-.container{
-    max-width: 100%;
-    margin: 0px;
-    padding: 0px 0px 0px 0px;
-
-
-}
-
-.inicio img{
-
+.col-esquerda img{
+     transform: rotate(20deg);
 }
 
 .inicio {
@@ -34,13 +25,14 @@ grid-template-columns: 1fr 1fr;
 
 display: grid;
 place-items: center;
-margin-top: 20px;
+
 }
 
 .col-direita {
 place-items: center;
     display: grid;
     grid-template-rows: auto auto; 
+    color: #ffffff;
 
 }
 
@@ -50,9 +42,6 @@ place-items: center;
     display: none;
   }
 }
-
-
-
 
 .tituloinicio{
     font-size: 74px;
@@ -70,12 +59,6 @@ margin-right: 100px;
 
 }
 
-.nuvem svg{
-    display: block;
-    width: 100%;
-     display: flex;
-}
-
 .container-text{
     display: grid;
     gap: 22px;
@@ -87,6 +70,7 @@ align-items: center;    /* Centraliza os itens horizontalmente */
 }
 
 .titulo2{
+    margin-top:20px ;
     display: flex;
     font-size: 50px;
     color: black;
@@ -385,6 +369,13 @@ background: linear-gradient(to bottom, #6FC6B8, #004AAD  );
 
 @media (max-width: 460px){
 
+.textvoluntarios{
+display: flex;
+color: #6FC6B8;
+
+}
+
+
 .tituloinicio{
     font-size: 40px;
     margin-top: 80px;
@@ -422,4 +413,8 @@ background: linear-gradient(to bottom, #6FC6B8, #004AAD  );
   max-width: 300px;
    text-align: center;
 }
+}
+
+.container {
+    padding: 0px 0px 0px 0px;
 }
