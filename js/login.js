@@ -4,13 +4,6 @@ function fazerLogin(event) {
     const email = document.getElementById('email').value;
     const senha = document.getElementById('senha').value;
 
-    const padraoEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-
-    if (!padraoEmail.test(email)) {
-        alert("E-mail inválido!");
-        document.getElementById('email').focus();
-    }
-
     if (senha.length < 6) {
         Swal.fire({
             position: "center",
