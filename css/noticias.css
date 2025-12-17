@@ -1,3 +1,4 @@
+@import url(global.css);
 
 *{
     font-family: var(--fonte-principal);
@@ -7,34 +8,37 @@
 
 /* ONDA */
 .onda{
-   position: absolute;
+    position: absolute;
     width: 100%;
+    height: 260px;
     margin: 0 auto;
     margin-top: -10px;
+    z-index: 1;
     top: 0;
-    left: 0
+    left: 0;
+    overflow: hidden;
 }
 
-.ondaa{
+.onda img{
     width: 100%;
-  display: block;
-  
+    display: block;
+    transform: scaleY(0.7);
+    transform-origin: top;
+    position: relative;
+    z-index: 1; 
 }
-
 
 .titulo-sobre-onda{
-  position: absolute;
-  top: 25%;
-  left: 4%;
-  transform: translateY(-50%);
-  font-size: 3cqi;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  font-family: var(--fonte-a);
-  z-index: 2;
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    color: white;
+    font-size: 64px;
+    font-weight: 700;
+    z-index: 10;
 }
 
-.onda, .onda * {
+.onda, .onda *{
     pointer-events: none;
 }
 
@@ -47,8 +51,8 @@
     max-width: 1800px;
     margin: 0 auto;
     position: relative;
-    margin-top: 0;
-    padding-top: 590px;
+    padding-top: 400px;
+
 }
 
 #noticias h2{
@@ -67,7 +71,8 @@
     max-width: 1100px;
     margin: -300px auto 0;
     padding: 20px;
-    margin-top: 100px;
+    margin-top: -80px;
+    padding: 0 16px;
 }
 
 #noticias h3{
@@ -82,6 +87,10 @@
 .noticias-container h2{
   font-size: 2.5rem;
   color: var(--cor-fundo-principal);
+}
+
+#eventos-container{
+    margin-bottom: 200px;
 }
 
 /* CARD */
@@ -150,34 +159,104 @@
     padding: 10px 50px;
     font-size: 20px;
     font-weight: 600;
-}
-
-.btn-noticia a {
     color: white;
+
+    display: inline-block;
+    transition: background 0.25s, transform 0.2s ease-in-out;
 }
 
 /* ANIMAÇOES */
 
-.card-noticia button {
-    transition: background .25s, transform .1s;
+.btn-noticia:hover{
+  background: #432ca1;
+  transform: scale(1.04);
 }
 
-.card-noticia button:hover {
-    background: #432ca1;
-    transform: scale(1.04)
+.btn-noticia:active{
+  transform: scale(0.95);
 }
 
-.card-noticia button:active {
-    transform: scale(.95);
-}
-
-.fade-in {
+.fade-in{
   opacity: 0;
   transform: translateY(20px);
   transition: opacity .8s ease, transform .8s ease;
 }
 
-.fade-in.show {
+.fade-in.show{
   opacity: 1;
   transform: translateY(0);
+}
+
+
+
+/* RESPONSIVO AQUI !!!! */
+
+
+@media (max-width: 768px){
+
+    .onda img{
+        transform: scaleY(0.5);
+    }
+
+    .titulo-sobre-onda{
+        font-size: 38px;
+        top: 30px;
+        left: 20px;
+    }
+
+    #noticias{
+        padding-top: 220px;
+    }
+
+    .noticias-container{
+        margin: -120px auto 0;
+        gap: 40px;
+        padding: 0 16px;
+    }
+
+    #noticias h3{
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 0;
+    }
+
+    .card-noticia{
+        grid-template-columns: 1fr;
+        border-radius: 28px;
+        padding: 16px;
+    }
+
+    .card-img img{
+        height: 200px;
+        border-radius: 22px;
+    }
+
+    .card-conteudo{
+        margin: 16px 8px;
+    }
+
+    .card-noticia .card-conteudo h4{
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .btn-noticia{
+        font-size: 16px;
+        padding: 10px 24px;
+    }
+
+    .onda{
+        height: 180px;
+    }
+
+    .titulo-sobre-onda{
+        font-size: 36px;
+        top: 30px;
+        left: 16px;
+    }
+
+    .noticias-container{
+        margin-top: -40px;
+        gap: 32px;
+    }
 }

@@ -4,34 +4,41 @@
     font-family: var(--fonte-principal);
 }
 
-
+/* ONDA */
 
 .onda{
-  position: relative;
-  display: inline-block;
-  width: 100%;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -10px;
+    z-index: 1;
+    top: 0;
+    left: 0;
 }
 
-.ondaa{
-  width: 100%;
-  display: block;
+.onda img{
+    width: 100%;
+    display: block;
+    transform: scaleY(0.7);
+    transform-origin: top;
+    position: relative;
+    z-index: 1;
 }
 
 .titulo-sobre-onda{
-  position: absolute;
-  top: 25%;
-  left: 4%;
-  transform: translateY(-50%);
-  font-size: 5cqi;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  font-family: var(--fonte-a);
-  z-index: 2;
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    color: white;
+    font-size: 64px;
+    font-weight: 700;
+    z-index: 10;
 }
 
-.onda, .onda * {
+.onda, .onda *{
     pointer-events: none;
 }
+
 
 /* corpo dicas */
 #dicas{
@@ -41,7 +48,7 @@
     margin: 0 auto;
     position: relative;
     margin-top: 0;
-    padding-top: 214px;
+    padding-top: 140px; 
 }
 
 .dicas-container {
@@ -159,4 +166,62 @@
 
 .botoes-container a:nth-child(4){
     transform: translateX(calc(650px + var(--offset-inicial)));
+}
+
+
+/* RESPONSIVO AQUI !!!! */
+
+@media (max-width: 768px) {
+
+    .titulo-sobre-onda{
+        font-size: 40px;
+        top: 40px;
+        left: 20px;
+    }
+
+    #dicas{
+        padding-top: 100px;
+    }
+
+    .dicas-container{
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 0 20px;
+    }
+
+    .dicas-texto p{
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .dicas-imagem{
+        width: 260px;
+        height: 260px;
+        transform: none;
+        margin: 0 auto;
+    }
+
+    .imagem{
+        width: 280px;
+        bottom: -30px;
+    }
+
+    .botoes-container{
+        align-items: center;
+        margin-top: 0;
+        gap: 20px;
+    }
+
+    .btn-dicas{
+        width: 100%;
+        max-width: 320px;
+        font-size: 18px;
+        padding: 16px 24px;
+    }
+
+    .botoes-container a{
+        transform: none !important;
+    }
 }
