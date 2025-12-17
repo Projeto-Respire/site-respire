@@ -1,39 +1,15 @@
 #eventos {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: auto;
   background: linear-gradient(to bottom, #0066ff, #5b3c8b);
+  overflow: hidden;
 }
 
-.em-cima-de-todos2{
-  visibility: hidden;
-}
-
-.main-eventos{
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden; 
-}
-
-.em-cima-de-todos{
-  color: var(--cor-evento);
-  margin-bottom: 160px;
-  margin-top: 200px;
-  font-weight: bold;
-  font-family: var(--fonte-a);
-  font-size: 1.5rem;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-.em-cima-de-todos2{
-  color: var(--cor-evento);
-  margin-top: 200px;
-  font-weight: bold;
-  margin-bottom: 50px;
-  font-family: var(--fonte-a);
-  font-size: 1.5rem;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+.tudo{
+  width: 100%;
 }
 
 
@@ -42,15 +18,24 @@
   transition: transform .9s;
 }
 
-h1{
+.txt-eventin{
   font-family: var(--fonte-a);
   text-align: center;
   color: white;
   font-size: 2.5rem;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   margin-top: 60px;
+  text-align: center;
 }
 
+.pFirsty{
+  font-family: var(--fonte-a);
+  text-align: center;
+  color: white;
+  font-size: 1.6rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
 
 .colab {
   display: flex;
@@ -87,13 +72,23 @@ h1{
   margin-top: 15px; 
 }
 
+.pSecondy{
+  font-family: var(--fonte-a);
+  text-align: center;
+  color: white;
+  font-size: 1.6rem;
+  margin-bottom: 150px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
 
 .relogio{
   font-family: var(--fonte-a);
     display: flex;           
     justify-content: center; 
-    gap: 60px;               
-    margin-top: 60px;        
+    gap: 60px;        
     margin-bottom: 40px;
 }
 
@@ -101,8 +96,7 @@ h1{
     font-family: var(--fonte-a);
     display: flex;
     flex-direction: column; 
-    align-items: center;     
-    min-width: 80px;         
+    align-items: center;       
 }
 
 .box .valor {
@@ -115,14 +109,13 @@ h1{
     font-size: 1rem;     
     color: #e0e0e0;          
     margin-top: 10px;        
-    text-transform: capitalize; 
 }
 
 
 .botao button{
-  padding: 10px 15px;
-  border-radius: 20px;
-  margin-bottom: 30px;
+  padding: 10px 55px;
+  border-radius: 10px;
+  margin-bottom: 50px;
   transition: 0.5s;
 
 }
@@ -140,9 +133,117 @@ button:hover {
     
 }
 
+.nuvem {
+  position: absolute;
+  width: 20vw;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: blur(2px);
+}
+
+.nuvem.esquerda {
+  left: -6vw;
+  bottom: -8vw;
+}
+
+.nuvem.direita {
+right: -6vw;
+top: 21vw;
+}
+
+
+.nuvem.direita2{
+  left: 85vw;
+  bottom: -8vw;
+  transform: scaleX(-1);
+}
+
+.nuvem.esquerda2{
+left: -6vw;
+bottom: 1vw;
+}
+
+.nuvem.esquerda3{
+left: -6vw;
+bottom: 15vw;
+transform: scaleX(-1);
+}
+
+
+.nuvem.direita3{
+left: 85vw;
+bottom: 15vw;
+}
+
+.nuvem.passaro{
+  left: 60vw;
+  top: -15vw;
+  width: 43vw;
+  opacity: 1;
+}
+
+.nuvem.passarosesquerda{
+  left: -2vw;
+  top: -14vw;
+  width: 43vw;
+  opacity: 1;
+}
+
+.txttt{
+  font-size: 1.5rem;
+  font-family: var(--fonte-a);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  color: var(--cor-evento);
+}
+
+.imgtxt{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 150px;
+}
+
+.imgtxt1 p{
+  max-width: 30ch;
+  font-size: 0.8rem;
+  font-family: var(--fonte-a);
+  font-weight: 600;
+  color: var(--cor-evento);
+}
+
 .futures{
   display: flex;
   gap: 50px;
+  justify-content: center;
+}
+
+.breve{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.brevinho{
+  font-family: var(--fonte-a);
+  font-size: 2rem;
+  color: var(--cor-evento);
+  margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.brevezin{
+  font-family: var(--fonte-a);
+  font-size: 1rem;
+  color: var(--cor-evento);
+  max-width: 40ch;
+  text-align: center;
 }
 .evento-breve{
 display: flex;
@@ -169,11 +270,6 @@ object-fit: cover;
   height: 448px;
   width: 400px;
 }
-
-
-
-
-
 
 @media (max-width: 768px) {
 
@@ -243,20 +339,12 @@ h1 {
     box-shadow: none;
 }
 
-.em-cima-de-todos{
-  font-size: 1rem;
-  margin-bottom: 0px;
-  max-width: 30ch;
-}
-
-.em-cima-de-todos2{
-  font-size: 1rem;
-  margin-bottom: 250px;
-  max-width: 30ch;
-}
 .futures{
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+
 }
 .evento-breve:hover{
   transform: none; 
@@ -264,4 +352,25 @@ h1 {
   height: 500px;
 }
 
+.txttt{
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.imgtxt{
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 150px;
+
+}
+
+.brevinho{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-bottom: 30px;
+}
+.brevezin{
+  font-size: 0.9rem;
+}
 }

@@ -8,32 +8,23 @@
 
 /* ONDA */
 .onda{
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 260px;
-    margin: 0 auto;
-    margin-top: -10px;
-    z-index: 1;
-    top: 0;
-    left: 0;
     overflow: hidden;
 }
 
 .onda img{
     width: 100%;
-    display: block;
-    transform: scaleY(0.7);
-    transform-origin: top;
-    position: relative;
-    z-index: 1; 
+    height: auto;
+    z-index: 1;
 }
 
 .titulo-sobre-onda{
     position: absolute;
-    top: 60px;
-    left: 40px;
+    top: 150px;
+    left: 80px;
     color: white;
-    font-size: 64px;
+    font-size: 4cqi;
     font-weight: 700;
     z-index: 10;
 }
@@ -52,6 +43,8 @@
     margin: 0 auto;
     position: relative;
     padding-top: 400px;
+    margin-top: -400px;
+
 
 }
 
@@ -195,21 +188,15 @@
 @media (max-width: 768px){
 
     .onda img{
-        transform: scaleY(0.5);
-    }
-
-    .titulo-sobre-onda{
-        font-size: 38px;
-        top: 30px;
-        left: 20px;
+        width: 100%;
     }
 
     #noticias{
         padding-top: 220px;
+        margin-top: 20px;
     }
 
     .noticias-container{
-        margin: -120px auto 0;
         gap: 40px;
         padding: 0 16px;
     }
@@ -250,7 +237,7 @@
     }
 
     .titulo-sobre-onda{
-        font-size: 36px;
+        font-size: 6cqi;
         top: 30px;
         left: 16px;
     }

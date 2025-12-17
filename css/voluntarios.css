@@ -5,11 +5,19 @@
      transform: rotate(20deg);
 }
 
+.tudo{
+  background: linear-gradient(to bottom,#004AAD , #6FC6B8 );
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+
 .inicio {
 margin: 0 auto;
-background: linear-gradient(to bottom,#004AAD , #6FC6B8 );
 display: grid;
 grid-template-columns: 1fr 1fr;
+max-width: 1920px;
+width: 100%;
 
 }
 
@@ -37,6 +45,7 @@ place-items: center;
 }
 
 
+
 @media (max-width: 600px) {
   .col-esquerda {
     display: none;
@@ -60,13 +69,12 @@ margin-right: 100px;
 }
 
 .container-text{
-    display: grid;
-    gap: 22px;
+    display: flex;
     flex-direction: column;
-align-items: center;    /* Centraliza os itens horizontalmente */
-    justify-content: center; /* Centraliza verticalmente (opcional) */
-    text-align: center;     /* Garante que o texto dentro das tags fique centralizado */
-    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 22px;
 }
 
 .titulo2{
@@ -74,6 +82,8 @@ align-items: center;    /* Centraliza os itens horizontalmente */
     display: flex;
     font-size: 50px;
     color: black;
+    margin-left: 0px;
+
     
        
 }
@@ -100,6 +110,8 @@ color: #6FC6B8;
 margin: 0 auto;
 margin-top: 30px;
 text-align: center;
+    font-size: 4rem;
+
 }
 
 
@@ -334,34 +346,32 @@ background: linear-gradient(to bottom, #6FC6B8, #004AAD  );
 @media (max-width: 650px){
 
 .tituloinicio{
+    margin-right: 35px;
     font-size: 50px;
     margin-top: 80px;
-    display: flex;
-    align-items: center;
-    margin-left: 60px;
+    text-align: center;
     
 }
 
 .paragrafoinicio{
-    margin-left: 150px;
+    margin-left: 50px;
     margin-bottom: 80px;
-
-    font-size: 35px;
-     display: flex;
+    font-size: 2rem;
+    width: 20ch;
 
 }
 
 
 .titulo2{
     display: flex;
-    font-size: 6vh;
+    font-size: 2rem;
     color: black;
-        margin-left: 50px;
-        text-align: center;
+    margin-left: 0px;
+    text-align: center;
 }
 
 .paragrafo2{
-  font-size: 10px;
+  font-size: 1.2rem;
   max-width: 300px;
 }
 }
@@ -381,7 +391,7 @@ color: #6FC6B8;
     margin-top: 80px;
     display: flex;
     align-items: center;
- max-width: 100%;
+    margin-left: 35px;
 }
 
 .inicio{
@@ -392,11 +402,10 @@ color: #6FC6B8;
 
 .paragrafoinicio{
    margin: 0 auto;
+    padding-block: 20px;
     margin-bottom: 80px;
-    font-size: 35px;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
+    font-size: 1.5rem;
+    width: 20ch;
 
 }
 
@@ -409,7 +418,7 @@ color: #6FC6B8;
 }
 
 .paragrafo2{
-  font-size: 10px;
+  font-size: 1.2rem;
   max-width: 300px;
    text-align: center;
 }

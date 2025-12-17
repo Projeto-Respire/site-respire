@@ -3,7 +3,7 @@ const botaoSemente = document.querySelector('.botao');
 botaoSemente.addEventListener('click', function(event) {
  
     Swal.fire({
-        title: "Sua inscricao foi confirmada! 🥳",
+        title: "Sua inscrição foi confirmada! 🥳",
         text: "Agradecemos por parcticipar do nosso evento! Enviaremos os detalhes por e-mail.",
         icon: "success",
         confirmButtonText: "Prosseguir",

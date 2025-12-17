@@ -1,10 +1,24 @@
-
-html {
-    scroll-behavior: smooth;
+:root {
+    --cor-fundo-principal: #5C2BA8;
+    --cor-texto-claro: white;
+    --cor-texto-hover: #dbcbcb;
+    --fonte-principal: "Sarala", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+    --fonte-a: "Poppins", sans-serif;
+    --cor-evento: #3F3F3F;
 }
 
-main{
-  flex-grow: 1;
+.swal2-title {
+  font-family:'Poppins', sans-serif;
+}
+
+.swal2-text {
+  font-family:var(--fonte-principal)
+}
+
+.swal2-confirmButtonText {
+  font-family:'Poppins', sans-serif;
+ 
 }
 
 @keyframes entrarSuave {
@@ -18,34 +32,39 @@ main{
     }
   }
 
-
-:root {
-    --cor-fundo-principal: #5C2BA8;
-    --cor-texto-claro: white;
-    --cor-texto-hover: #dbcbcb;
-    --fonte-principal: "Sarala", sans-serif;
-    --fonte-secundaria: "Montserrat", sans-serif;
-    --fonte-a: "Poppins", sans-serif;
-    --cor-evento: #3F3F3F;
-}
-
 *{
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  border: none;
-  font-family: "Poppins", sans-serif;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto; 
-    padding: 0 15px;   
-}
-
-body{
-  margin: 0 auto;
+body {
   animation: entrarSuave 0.8s ease-out;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f1ea; 
+}
+
+main {
+  flex-grow: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.meet {
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 1700px !important;   
+  margin: 0 auto !important;
+  align-content: center;     
+  flex-wrap: wrap;     
 }
 
 li{
@@ -55,6 +74,7 @@ li{
 a{
   text-decoration: none;
   cursor: pointer;
+  color: var(--fonte-a);
 }
 
 a:hover{
@@ -63,10 +83,6 @@ a:hover{
 
 ul{
   padding: 0px;
-}
-
-img{
-  width: 120px;
 }
 
 #menu a {
@@ -92,8 +108,13 @@ img{
     transform: scaleX(1);
 }
 
-.retem {
-  max-width: 1700px;
-  margin: 0 auto;
-  align-items: center;
+.container {
+  max-width: 1920px;       
+  margin: 0 auto;         
+  padding: 0 20px;        
+  width: 100%;
+  display: flex;           
+  justify-content: center; 
+  align-items: center;   
+  gap: 50px;             
 }

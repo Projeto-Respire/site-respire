@@ -27,10 +27,10 @@
 
 .titulo-sobre-onda{
     position: absolute;
-    top: 60px;
-    left: 40px;
+    top: 160px;
+    left: 90px;
     color: white;
-    font-size: 64px;
+    font-size: 4cqi;
     font-weight: 700;
     z-index: 10;
 }

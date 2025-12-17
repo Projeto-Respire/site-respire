@@ -284,14 +284,16 @@ background-color: #25D366
     box-shadow: none;
     transform: none;
     transition: none;
-    background-color: #40454b;  
+    background-color: #ffffff;  
+    color: #5C2BA8;
 }
 
 .btn-destaque:hover {
-    box-shadow: 0 4px #000000;
+    box-shadow: none;
     transform: none;
     transition: none;
-    background-color: #23272b;  
+    background-color: #ffffff;
+    color: #5C2BA8;  
 }
 
 }

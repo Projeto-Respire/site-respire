@@ -29,20 +29,23 @@ const countdown = () => {
 
 setInterval(countdown, 1000);
 
+//scrollReval
+window.revelar = ScrollReveal({reset:true})
 
-//split-txt
-const transicao = new SplitType('.em-cima-de-todos');
-
-gsap.to('.word',{
-
-  y: 0, 
-  delay: 0.2,
-  duration: .1,
-  stagger: 0.05, 
+    revelar.reveal('.breve',
+{    
+    origin: 'bottom',
+    distance: '90px',
+    duration: 1500,
+    delay: 10,
+    interval: 200,
+    viewFactor: 0.2,
+    reset: false
 })
 
 
-//scrollReval
+
+
 window.revelar = ScrollReveal({reset:true})
 
     revelar.reveal('.evento-breve',
@@ -56,13 +59,3 @@ window.revelar = ScrollReveal({reset:true})
     reset: false
 })
 
-
-    revelar.reveal('.em-cima-de-todos2',
-{    
-    origin: 'bottom',
-    distance: '10px',
-    duration: 2000,
-    interval: 200,
-    viewFactor: 0.2,
-    reset: false
-})

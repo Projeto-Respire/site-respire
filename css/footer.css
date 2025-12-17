@@ -22,12 +22,16 @@
 #footer_contacts p{
   margin-bottom: 20px;
   font-size: 20px;
+  opacity: 0.85;
+  line-height: 1.5;
 }
+
 
 #footer_social_media{
   display: flex;
   gap: 2rem;
   margin-top: 1.5rem;
+  gap: 1.5rem;
 
 }
 
@@ -41,10 +45,13 @@
   color: white;
   border-radius: 50%;
   transition: all 0.4s;
+   box-shadow: 0 4px 10px rgba(0,0,0,0.25);
 }
 
 #footer_social_media .footer-link:hover {
   opacity: 0.8;
+  transform: translateY(-2px);
+  opacity: 1;
 }
 #instagram{
   background: linear-gradient(#7f37C9,#ff1e00, #ff9807);
@@ -68,10 +75,12 @@
 .listy .footer-link{
 transition: all 0.4s;
 color: white;
+transition: color 0.25s ease, transform 0.25s ease;
 }
 
 .listy .footer-link:hover{
-color: var(--cor-texto-hover)
+  color: var(--cor-texto-hover);
+  transform: translateX(4px);
 }
  
 #footer_subscribe{
@@ -93,10 +102,12 @@ color: var(--cor-texto-hover)
 
 #input_group input{
   all: unset; 
-  background-color: #fff8f8a8;
   color: black;
   padding: 0.75rem;
   width: 200px;
+  transition: box-shadow 0.25s ease;
+  background-color: rgba(255,255,255,0.25);
+  color: white;
 }
 
 #input_group button{
@@ -108,10 +119,13 @@ color: var(--cor-texto-hover)
   height: 100%;
   border-radius: 0px 4px 4px 0px;
   cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+
 }
 
 #input_group button:hover{
-  opacity: 0.8;
+  opacity: 1;
+  transform: translateY(-1px);
 }
 
 #footer_copy{
@@ -120,6 +134,9 @@ color: var(--cor-texto-hover)
   border-top: 1px solid;
   padding-block: 1.5rem;
   font-weight: 100;
+  border-top: 1px solid rgba(255,255,255,0.25);
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
 
 .apoio-texto h3 {

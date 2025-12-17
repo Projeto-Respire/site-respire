@@ -68,6 +68,8 @@ box-shadow: 5px 14px 20px 10px #9a9494;
 border: 1px solid rgb(0, 0, 0);
 padding: 15px 15px;
 margin-bottom: 50px;
+font-family:var(--fonte-a);
+line-height: 21px;
 }
 
 .yt{
@@ -148,6 +150,7 @@ border-radius: 20px;
 .fistP{
 
 font-size: 1rem;
+width: 50ch;
 text-align: center;
 margin-top: 20px;
 margin-bottom: -150px;

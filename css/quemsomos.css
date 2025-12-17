@@ -162,9 +162,10 @@ body {
     }
 
     .texto-somos p {
+        padding-block: 20px;
         text-align: center;
         margin: 0;
-        width: auto;
+        width: 22ch;
         font-size: 24px;
        
     }
@@ -212,5 +213,3 @@ body {
     }
     
 }
-
-.homem{}

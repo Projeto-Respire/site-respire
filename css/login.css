@@ -212,3 +212,23 @@ button:hover {
 .registro-link a:hover,.esqueci:hover{
     color: #5E17EB;
 }
+
+@media (max-width: 768px) {
+    
+.login-card {
+grid-template-columns: 1fr;
+margin-bottom: 20px;
+}
+.esquedo img{
+margin: 0;
+margin-bottom: 20px;
+width: 40%;
+border-radius: 20px;
+}
+
+.esquedo{
+margin-bottom: 50px;
+}
+
+}
+  

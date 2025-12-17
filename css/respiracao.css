@@ -13,17 +13,11 @@
 
 .onda{
   position: relative;
-  display: inline-block;
+  height: 300px;
   width: 100%;
   z-index: 2;
 }
 
-.ondaa{
-  width: 100%;
-  display: block;
-  z-index: -1;
-  color: #fff;
-}
 
 .titulo{
   position: absolute;
@@ -67,6 +61,16 @@
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
 }
 
+.circle button{
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--fonte-a);
+} 
+
 .iniciar{
   font-family: var(--fonte-a);
   font-weight: 100;
@@ -86,122 +90,16 @@
 }
 
 
-.footer {
-  width: 100%;
-  /* background: #5d1a8a; */
-   background: transparent; 
-  color: #ffffff;
-  padding-top: 50px;
-  padding-bottom: 20px;
-}
-
-
-
-.footer {
-  width: 100%;
-  background: transparent;
-  color: #fff;
-  padding-top: 50px;
-  padding-bottom: 30px;
-  position: relative;
-  margin-top: 0;
-  border-top: none;              
-}
-
 .iniciar{
   color: white;
 }
-.footer__content {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
-  padding: 0 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  padding-bottom: 30px;
+
+@media (max-width: 768px) {
+
+.titulo{
+   top: 15%;
+  left: 11%;
+  font-size: 1rem;
 }
 
-/* LOGO + TEXTO */
-.footer__logo {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 220px;
-}
-
-.footer__img {
-  width: 80px;
-}
-
-.footer__brand {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.footer__brand span {
-  display: block;
-  font-size: 12px;
-  font-weight: 300;
-}
-
-.footer__nav h3,
-.footer__contact h3 {
-  font-size: 16px;
-  margin-bottom: 12px;
-  font-weight: 600;
-}
-
-.footer__nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer__nav li {
-  margin-bottom: 8px;
-}
-
-.footer__nav a {
-  color: #ffffff;
-  font-size: 14px;
-  text-decoration: none;
-  transition: 0.3s ease-in-out;
-}
-
-.footer__nav a:hover {
-  opacity: 0.7;
-}
-
-/* CONTACTS */
-.footer__icons {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 15px;
-}
-
-.footer__icons i {
-  font-size: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.footer__icons i:hover {
-  opacity: 0.7;
-}
-
-.footer__smalltext {
-  font-size: 12px;
-  opacity: 0.8;
-  max-width: 250px;
-  line-height: 1.4;
-}
-
-
-.footer__copy {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 13px;
-  opacity: 0.7;
 }

@@ -1,8 +1,7 @@
 .comunidades-page{
    font-family: var(--fonte-a);
    overflow: hidden;
-   
-
+   width: 100%;
 }
 
 
@@ -286,6 +285,8 @@ button:hover{
   display: flex;
   gap: 50px;
   margin-bottom: 120px;
+  justify-content: center;
+
 }
 
 .outro{
@@ -377,9 +378,9 @@ h1{
 }
 
 .quadrado:hover {
-    transform: none !important;
-    height: 500px !important;
-    width: 350px !important; 
+    transform: none;
+    height: 500px;
+    width: 350px;
 }
 
 .primeiro{
@@ -398,7 +399,6 @@ h1{
   font-size: 1rem;
   width: 100%;
   text-align: center;
-  padding: 0 99px
 }
 
 .barrapesquisa{
